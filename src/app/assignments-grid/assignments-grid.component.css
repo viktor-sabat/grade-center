@@ -1,0 +1,6 @@
+.assignments-grid{
+    background-color: var(--page-content-bg-colour);
+    display: grid;
+    gap: var(--step--4);
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 11), 1fr));
+}
