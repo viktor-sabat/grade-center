@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+/*!==============++==============*/
+/*! All global CSS shall be here */
+/*!=============++===============*/
+
+:root{
+    /*============================*/
+    /* Colour Palette             */
+    /*============================*/
+
+
+    /* Global CSS variables related to the assignment card */
+    --card-not-uploaded-colour: #a4a9ad;
+    --card-not-reviewed-colour: #a4a9ad;
+    --card-reviewed-colour: #7ecdce;
+    --card-expired-colour: #fa5873;
+
+    /* Global CSS variables related to the page content */ 
+    --page-content-bg-colour: #f2f6fa;
+
+    /*============================*/
+    /* Fonts                      */
+    /*============================*/
+
+    /*TODO: Find a font */
+    --main-font: Poppins;
+
+    /* 
+        Responsive sizing steps for adjusting typography or spacing.
+        These values are calculated to change smoothly based on screen size.
+        --step--5 is the smallest and --step-9 is the biggest one.
+    */
+
+    --step--5: clamp(0.3013rem, 0.2921rem + 0.0457vw, 0.3275rem);
+    --step--4: clamp(0.3619rem, 0.3454rem + 0.0826vw, 0.4094rem);
+    --step--3: clamp(0.4338rem, 0.4066rem + 0.1359vw, 0.5119rem);
+    --step--2: clamp(0.5206rem, 0.4791rem + 0.2076vw, 0.64rem);
+    --step--1: clamp(0.625rem, 0.5641rem + 0.3043vw, 0.8rem);
+    --step-0: clamp(0.75rem, 0.663rem + 0.4348vw, 1rem);
+    --step-1: clamp(0.9rem, 0.7783rem + 0.6087vw, 1.25rem);
+    --step-2: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
+    --step-3: clamp(1.2963rem, 1.0678rem + 1.1424vw, 1.9531rem);
+    --step-4: clamp(1.555rem, 1.2467rem + 1.5413vw, 2.4413rem);
+    --step-5: clamp(1.8663rem, 1.4539rem + 2.062vw, 3.0519rem);
+    --step-6: clamp(2.2394rem, 1.6913rem + 2.7402vw, 3.815rem);
+    --step-7: clamp(2.6875rem, 1.9638rem + 3.6185vw, 4.7681rem);
+    --step-8: clamp(3.225rem, 2.2735rem + 4.7576vw, 5.9606rem);
+    --step-9: clamp(3.87rem, 2.6246rem + 6.2272vw, 7.4506rem);
+
+    /*! Use this one if you need a step that grows really fast */
+    --step-3-plus: clamp(1.555rem, 0.1057rem + 7.2467vw, 5.7219rem);
+}
