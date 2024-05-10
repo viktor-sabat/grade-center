@@ -1,0 +1,21 @@
+.assignment-card{
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 3 / 4.5;
+}
+
+.assignment-card--not-uploaded{
+    background-color: var(--card-not-uploaded-colour);
+}
+
+.assignment-card--not-reviewed{
+    background-color: var(--card-not-reviewed-colour);
+}
+
+.assignment-card--reviewed{
+    background-color: var(--card-reviewed-colour);
+}
+
+.assignment-card--expired{
+    background-color: var(--card-expired-colour);
+}

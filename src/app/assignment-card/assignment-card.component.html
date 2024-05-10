@@ -1,0 +1,11 @@
+<article [class]="{
+    'assignment-card': true,
+    'assignment-card--not-uploaded': !isAssignmentUploaded && !isAssignmentExpired,
+    'assignment-card--not-reviewed': isAssignmentUploaded && !isAssignmentReviewed,
+    'assignment-card--reviewed': isAssignmentUploaded && isAssignmentReviewed,
+    'assignment-card--expired': isAssignmentExpired
+}">
+    <p>card is on!</p>
+</article>
+
+  
