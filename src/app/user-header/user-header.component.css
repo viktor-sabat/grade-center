@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    padding: var(--step-5);
+    height: 9vh;
+    background-color: white;
+    filter: var(--page-filter-drop-shadow-settings-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__section {
+    display: flex;
+    align-items: center;
+}
+.header__div {
+    margin-right: var(--step-0);
+    height: var(--step-7);
+    width: var(--step-7);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__image {
+    width: var(--step-7);
+    object-fit: cover;
+}
+.header__select {
+    font-size: var(--step-0);
+    background-color: transparent;
+    border: none;
+}
+.header__select:hover {
+    cursor: pointer;
+}
+/*ToDo Give option cursor pointer if possible*/
+
+.header__logout {
+    margin-right: var(--step-8);
+    margin-left: var(--step-2);
+}
+.header__logout:hover {
+    cursor: pointer;
+}
