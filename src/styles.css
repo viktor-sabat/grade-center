@@ -39,6 +39,12 @@
     --page-grid-settings-sidemenu-collapsed: auto 96%;
     --page-grid-settings-sidemenu-expended: ; /*ToDo add sizing for sidemenu expended*/
 
+    /*=============================*/
+    /* user-header                 */
+    /*=============================*/
+    
+    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
+
     /* 
         Responsive sizing steps for adjusting typography or spacing.
         These values are calculated to change smoothly based on screen size.
