@@ -1,0 +1,4 @@
+.app-section {
+    display: grid;
+    grid-template-columns: auto 96%;
+}
