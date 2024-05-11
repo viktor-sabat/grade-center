@@ -1,4 +1,5 @@
+/*ToDo create 2 more classes for expended and collapsed menu*/
 .app-section {
     display: grid;
-    grid-template-columns: auto 96%;
+    grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
 }

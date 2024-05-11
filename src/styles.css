@@ -32,6 +32,13 @@
     /*TODO: Find a font */
     --main-font: Poppins;
 
+    /*=============================*/
+    /* Sidemenu/content            */
+    /*=============================*/
+
+    --page-grid-settings-sidemenu-collapsed: auto 96%;
+    --page-grid-settings-sidemenu-expended: ; /*ToDo add sizing for sidemenu expended*/
+
     /* 
         Responsive sizing steps for adjusting typography or spacing.
         These values are calculated to change smoothly based on screen size.
