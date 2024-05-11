@@ -14,6 +14,9 @@
     --card-reviewed-colour: #7ecdce;
     --card-expired-colour: #fa5873;
 
+    --card-text-colour-for-dark-bg: #ffffff;
+    --card-text-colour-for-light-bg: #a4a9ad;
+
     /* Global CSS variables related to the page content */ 
     --page-content-bg-colour: #f2f6fa;
 

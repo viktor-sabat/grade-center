@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './assignment-card.component.html',
   styleUrl: './assignment-card.component.css'
 })
+
 export class AssignmentCardComponent {
   // Boolean variables representing different states of the assignment card.
   // Based on these variables, the colour of the card will be determined.
