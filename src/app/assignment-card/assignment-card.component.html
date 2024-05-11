@@ -5,7 +5,23 @@
     'assignment-card--reviewed': isAssignmentUploaded && isAssignmentReviewed,
     'assignment-card--expired': isAssignmentExpired
 }">
-    <p>card is on!</p>
+    <div class="assignment-card__header">
+        <p class="assignment-card__title">{{assignmentTitle}}</p>
+        <img class="assignment-card__icon" src="../../assets/Icons/info_icon.svg" alt="Information icon">
+    </div>
+    <div class="assignment-card__content">
+        <img class="assignment-card__background-image" src="../../assets/Images/assignment-attached-doc.png" alt="Background image">
+    </div>
+    <div class="assignment-card__footer">
+        <div class="footer__left-column">    
+            <p class="assignment-card__deadline">Deadline</p>
+            <p class="assignment-card__deadline-date">{{deadlineDate}}</p>
+        </div>
+        <div class="footer__right-column">
+            <p class="assignment-card__status-title">{{assignmentStatusTitle}}</p>
+            <p class="assignment-card__uploaded-date">{{uploadDate}}</p>
+        </div>
+    </div>
 </article>
 
-  
+

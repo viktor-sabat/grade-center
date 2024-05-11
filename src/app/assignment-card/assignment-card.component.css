@@ -1,8 +1,8 @@
 .assignment-card{
-    color: var(--card-text-colour-for-dark-bg);
     display: flex;
     flex-direction: column;
-    aspect-ratio: 3 / 4.5;
+    font: var(--main-font);
+    border-radius: var(--step--3);
 }
 
 .assignment-card--not-uploaded{
@@ -19,4 +19,81 @@
 
 .assignment-card--expired{
     background-color: var(--card-expired-colour);
+}
+
+.assignment-card__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--card-text-colour-for-light-bg);
+    background-color: var(--card-content-bg-colour);
+}
+
+.assignment-card__title{
+    font-size: var(--step-0);
+    padding: var(--step--3);
+}
+
+.assignment-card__icon{
+    width: var(--step-1);
+    padding: var(--step--2);
+}
+
+.assignment-card__content{
+    aspect-ratio: 4 / 4;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--card-content-bg-colour);
+}
+
+.assignment-card__background-image{
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit:contain;
+} 
+
+.assignment-card__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--step--1);
+    color: var(--card-text-colour-for-dark-bg);
+}
+
+.footer__left-column{
+}
+
+.assignment-card__deadline{
+    padding-left: var(--step-0);
+    padding-right: var(--step-0);
+    padding-top: var(--step-0);
+    padding-bottom: calc(var(--step-0)*0.2);
+    margin: 0;
+}
+
+.assignment-card__deadline-date{
+    padding-left: var(--step-0);
+    padding-right: var(--step-0);
+    padding-top: calc(var(--step-0)*0.2); 
+    padding-bottom: var(--step-0);
+    margin: 0;
+}
+
+.footer__right-column{
+}
+
+.assignment-card__status-title{
+    padding-left: var(--step-0);
+    padding-right: var(--step-0);
+    padding-top: var(--step-0);
+    padding-bottom: calc(var(--step-0)*0.2);
+    margin: 0;
+}
+
+.assignment-card__uploaded-date{
+    padding-left: var(--step-0);
+    padding-right: var(--step-0);
+    padding-top: calc(var(--step-0)*0.2); 
+    padding-bottom: var(--step-0);
+    margin: 0;
 }

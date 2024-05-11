@@ -1,7 +1,7 @@
 .assignments-grid{
     background-color: var(--page-content-bg-colour);
     display: grid;
-    gap: var(--step--4);
+    gap: var(--step--1);
     
     /* More info about repeat() function here -> https://www.sitepoint.com/css-grid-repeat-function/#usingrepeatwithautofitandautofill */
     grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 11), 1fr));
