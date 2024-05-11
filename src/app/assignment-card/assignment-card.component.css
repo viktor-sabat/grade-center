@@ -60,15 +60,11 @@
     color: var(--card-text-colour-for-dark-bg);
 }
 
-.footer__left-column{
-}
-
 .assignment-card__deadline{
     padding-left: var(--step-0);
     padding-right: var(--step-0);
     padding-top: var(--step-0);
     padding-bottom: calc(var(--step-0)*0.2);
-    margin: 0;
 }
 
 .assignment-card__deadline-date{
@@ -76,10 +72,6 @@
     padding-right: var(--step-0);
     padding-top: calc(var(--step-0)*0.2); 
     padding-bottom: var(--step-0);
-    margin: 0;
-}
-
-.footer__right-column{
 }
 
 .assignment-card__status-title{
@@ -87,7 +79,6 @@
     padding-right: var(--step-0);
     padding-top: var(--step-0);
     padding-bottom: calc(var(--step-0)*0.2);
-    margin: 0;
 }
 
 .assignment-card__uploaded-date{
@@ -95,5 +86,4 @@
     padding-right: var(--step-0);
     padding-top: calc(var(--step-0)*0.2); 
     padding-bottom: var(--step-0);
-    margin: 0;
 }
