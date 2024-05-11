@@ -9,6 +9,12 @@
     flex-direction: column;
     align-items: center;
 }
+.sidemenu-collapsed {
+    margin-bottom: var(--step-1);
+}
+.sidemenu-collapsed:hover {
+    cursor: pointer;
+}
 .sidemenu-list {
     list-style: none;
 }
