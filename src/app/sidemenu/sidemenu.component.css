@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-.sidemenu-section {
+.sidemenu {
     padding: var(--step-0);
     height: 100%;
     background-color: #4F5866;
@@ -9,16 +9,16 @@
     flex-direction: column;
     align-items: center;
 }
-.sidemenu-collapsed {
+.sidemenu__collapsed {
     margin-bottom: var(--step-1);
 }
-.sidemenu-collapsed:hover {
+.sidemenu__collapsed:hover {
     cursor: pointer;
 }
-.sidemenu-list {
+.sidemenu__list {
     list-style: none;
 }
-.sidemenu-item {
+.sidemenu__item {
     margin-top: var(--step-2);
     margin-bottom: var(--step-2);
 }
