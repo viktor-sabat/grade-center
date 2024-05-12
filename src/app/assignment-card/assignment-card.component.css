@@ -5,18 +5,22 @@
     border-radius: var(--step--3);
 }
 
+/*! This CSS class is not only used to style the assignment card background but also the background of the grade */
 .assignment-card--not-uploaded{
     background-color: var(--card-not-uploaded-colour);
 }
 
+/*! This CSS class is not only used to style the assignment card background but also the background of the grade */
 .assignment-card--not-reviewed{
     background-color: var(--card-not-reviewed-colour);
 }
 
+/*! This CSS class is not only used to style the assignment card background but also the background of the grade */
 .assignment-card--reviewed{
     background-color: var(--card-reviewed-colour);
 }
 
+/*! This CSS class is not only used to style the assignment card background but also the background of the grade */
 .assignment-card--expired{
     background-color: var(--card-expired-colour);
 }
@@ -40,6 +44,7 @@
 }
 
 .assignment-card__content{
+    position: relative;
     aspect-ratio: 4 / 4;
     display: flex;
     justify-content: space-around;
@@ -51,6 +56,25 @@
     width: 100%;
     object-fit:contain;
 } 
+
+.assignment-card__grade{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--card-text-colour-for-dark-bg);
+    font-weight: bold;
+    font-size: var(--step-5);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: var(--step-7);
+    text-align: center;
+    line-height: var(--step-7);
+}
+
+.assignment-card__grade--hidden{
+    display: none;
+}
 
 .assignment-card__footer{
     display: flex;
@@ -86,4 +110,8 @@
     padding-right: var(--step-0);
     padding-top: calc(var(--step-0)*0.2); 
     padding-bottom: var(--step-0);
+}
+
+.assignment-card__uploaded-date--hidden{
+    display: none;
 }

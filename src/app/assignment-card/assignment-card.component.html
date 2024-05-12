@@ -11,6 +11,12 @@
     </div>
     <div class="assignment-card__content">
         <img class="assignment-card__background-image" src="../../assets/Images/assignment-attached-doc.png" alt="Background image">
+        <div [class]="{
+            'assignment-card__grade': true,
+            'assignment-card__grade--hidden': isAssignmentUploaded && !isAssignmentReviewed || !isAssignmentUploaded && !isAssignmentExpired,
+            'assignment-card--reviewed': isAssignmentUploaded && isAssignmentReviewed,
+            'assignment-card--expired': isAssignmentExpired
+        }">{{assignmentGrade}}</div>
     </div>
     <div class="assignment-card__footer">
         <div class="footer__left-column">    
@@ -19,7 +25,7 @@
         </div>
         <div class="footer__right-column">
             <p class="assignment-card__status-title">{{assignmentStatusTitle}}</p>
-            <p class="assignment-card__uploaded-date">{{uploadDate}}</p>
+            <p class="assignment-card__uploaded-date" [class]="{'assignment-card__uploaded-date--hidden': isAssignmentExpired}">{{uploadDate}}</p>
         </div>
     </div>
 </article>

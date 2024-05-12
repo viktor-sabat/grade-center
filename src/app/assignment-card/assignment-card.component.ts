@@ -27,4 +27,6 @@ export class AssignmentCardComponent {
   // Represents the upload date on the assignment card
   uploadDate: string = "19.04.2024"
 
+  // Represents the assignment grade
+  assignmentGrade: string = "12";
 }
