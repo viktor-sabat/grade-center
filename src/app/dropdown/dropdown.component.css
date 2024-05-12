@@ -2,8 +2,9 @@
     background-color: var(--dropdown-bg-color);
     font-size: var(--step-1);
     width: calc(var(--step-1)*12);
-    height: var(--step-4);
+    height: var(--step-5);
     border-radius: var(--step-4);
     border: solid 1px var(--dropdown-border-color);
     padding-left: var(--step-0);
+    margin-right: var(--step-3);
 }
