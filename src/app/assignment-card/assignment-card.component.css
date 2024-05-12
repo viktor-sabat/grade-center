@@ -103,3 +103,7 @@
     padding-top: calc(var(--step-0)*0.2); 
     padding-bottom: var(--step-0);
 }
+
+.assignment-card__uploaded-date--hidden{
+    display: none;
+}
