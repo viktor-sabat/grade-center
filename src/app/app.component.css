@@ -2,4 +2,5 @@
 .app-section {
     display: grid;
     grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
+    height: 100vh;
 }
