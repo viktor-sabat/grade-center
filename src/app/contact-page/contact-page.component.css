@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.contact {
+    padding: var(--step-0);
+    background-color: var(--page-content-bg-colour);
+    display: grid;
+    gap: var(--step--1);
+    /* More info about repeat() function here -> https://www.sitepoint.com/css-grid-repeat-function/#usingrepeatwithautofitandautofill */
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 30), 1fr));
+}
+
+.contact__section {
+    padding: var(--step-0);
+    height: var(--page-height-settings-content-article);
+    width: var(--page-with-settings-content-article);
+    background-color: white;
+}
+
+.contact__section--social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__title {
+    margin-bottom: var(--step-1);
+    font-size: var(--step-2);
+    border-bottom: 1pt solid black;
+}
+
+.contact__title--social{
+    border: none;
+}
+
+.contact__list {
+    padding: var(--step-1);
+    list-style: none;
+}
+
+.contact__icon {
+    margin-right: var(--step--1);
+    width: var(--step-0);
+}
+
+.contact__icon--location {
+    width: var(--step-1);
+}
+
+.contact__item {
+    margin: var(--step-0) 0 var(--step-0) var(--step-2);
+    font-size: var(--step-1);
+}
+
+.contact__item--title {
+    margin: 0;
+    font-weight: bold;
+}
+.contact__social-icon {
+    margin: 0 var(--step-0);
+    width: var(--step-3);
+}

@@ -87,5 +87,9 @@
 
     --card-content-bg-colour: #ffffff;
 
-
+    /*=============================*/
+    /* Content page                */
+    /*=============================*/
+    --page-height-settings-content-article: clamp(10.9375rem, 7.4468rem + 18.617vi, 21.875rem);
+    --page-with-settings-content-article: clamp(15rem, 10.2128rem + 25.5319vi, 30rem);
 }
