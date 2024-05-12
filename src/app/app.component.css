@@ -4,3 +4,7 @@
     grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
     height: 100vh;
 }
+.page-content{
+    background-color: var(--page-bg-color);
+    height: 100%;
+}

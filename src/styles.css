@@ -4,6 +4,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{    
     /* 
@@ -42,7 +43,7 @@
     /* user-header                 */
     /*=============================*/
     
-    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
+    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 2px #a4a9ad);
 
     /*=============================*/
     /* Dropdown                    */
@@ -50,6 +51,7 @@
 
     --dropdown-bg-color: #ffffff;
     --dropdown-border-color: #a4a9ad;
+    --dropdown-label-color: #5B5F62;
 
 
     /*=============================*/
@@ -58,6 +60,7 @@
 
     --page-grid-settings-sidemenu-collapsed: var(--step-7) auto;
     --page-grid-settings-sidemenu-expended: ; /*ToDo add sizing for sidemenu expended*/
+    --page-bg-color: #f2f6fa;
     
     /* Global CSS variables related to the page content */ 
     --page-content-bg-colour: #f2f6fa;

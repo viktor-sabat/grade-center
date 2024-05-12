@@ -7,4 +7,9 @@
     border: solid 1px var(--dropdown-border-color);
     padding-left: var(--step-0);
     margin-right: var(--step-3);
+    color: var(--dropdown-label-color);
+}
+
+.dropdown:hover{
+    cursor: pointer;
 }
