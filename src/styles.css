@@ -45,6 +45,14 @@
     --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
 
     /*=============================*/
+    /* Dropdown                    */
+    /*=============================*/
+
+    --dropdown-bg-color: #ffffff;
+    --dropdown-border-color: #a4a9ad;
+
+
+    /*=============================*/
     /* Sidemenu/content            */
     /*=============================*/ 
 
@@ -75,5 +83,6 @@
     --card-text-colour-for-light-bg: #a4a9ad;
 
     --card-content-bg-colour: #ffffff;
+
 
 }
