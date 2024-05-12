@@ -13,8 +13,7 @@
         <img class="assignment-card__background-image" src="../../assets/Images/assignment-attached-doc.png" alt="Background image">
         <div [class]="{
             'assignment-card__grade': true,
-            'assignment-card--not-uploaded': !isAssignmentUploaded && !isAssignmentExpired,
-            'assignment-card--not-reviewed': isAssignmentUploaded && !isAssignmentReviewed,
+            'assignment-card__grade--hidden': isAssignmentUploaded && !isAssignmentReviewed || !isAssignmentUploaded && !isAssignmentExpired,
             'assignment-card--reviewed': isAssignmentUploaded && isAssignmentReviewed,
             'assignment-card--expired': isAssignmentExpired
         }">{{assignmentGrade}}</div>
