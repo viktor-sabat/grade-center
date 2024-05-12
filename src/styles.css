@@ -42,7 +42,7 @@
     /* user-header                 */
     /*=============================*/
     
-    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
+    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 2px #a4a9ad);
 
     /*=============================*/
     /* Dropdown                    */
