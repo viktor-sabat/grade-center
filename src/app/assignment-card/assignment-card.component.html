@@ -25,7 +25,7 @@
         </div>
         <div class="footer__right-column">
             <p class="assignment-card__status-title">{{assignmentStatusTitle}}</p>
-            <p class="assignment-card__uploaded-date" [class]="{'assignment-card__uploaded-date--hidden': isAssignmentExpired}">{{uploadDate}}</p>
+            <p class="assignment-card__uploaded-date" [class]="{'assignment-card__uploaded-date--hidden': isAssignmentExpired || !isAssignmentUploaded}">{{uploadDate}}</p>
         </div>
     </div>
 </article>
