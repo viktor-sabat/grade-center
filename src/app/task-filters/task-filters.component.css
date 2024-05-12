@@ -1,0 +1,9 @@
+.task-filters{
+    margin-left: var(--step-7);
+    margin-right: var(--step-7);
+    margin-top: var(--step-3);
+    margin-bottom: var(--step-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--step--5);
+}

@@ -3,7 +3,7 @@
 }
 .header {
     padding: var(--step-5) var(--step-0);
-    height: 9vh;
+    height: var(--step-9);
     background-color: white;
     filter: var(--page-filter-drop-shadow-settings-header);
     display: flex;
