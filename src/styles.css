@@ -5,46 +5,7 @@
     padding: 0;
     margin: 0;
 }
-:root{
-    /*============================*/
-    /* Colour Palette             */
-    /*============================*/
-
-
-    /* Global CSS variables related to the assignment card */
-    --card-not-uploaded-colour: #a4a9ad;
-    --card-not-reviewed-colour: #fecb5c;
-    --card-reviewed-colour: #7ecdce;
-    --card-expired-colour: #fa5873;
-
-    --card-text-colour-for-dark-bg: #ffffff;
-    --card-text-colour-for-light-bg: #a4a9ad;
-
-    --card-content-bg-colour: #ffffff;
-
-    /* Global CSS variables related to the page content */ 
-    --page-content-bg-colour: #f2f6fa;
-
-    /*============================*/
-    /* Fonts                      */
-    /*============================*/
-
-    /*TODO: Find a font */
-    --main-font: Poppins;
-
-    /*=============================*/
-    /* Sidemenu/content            */
-    /*=============================*/
-
-    --page-grid-settings-sidemenu-collapsed: auto 96%;
-    --page-grid-settings-sidemenu-expended: ; /*ToDo add sizing for sidemenu expended*/
-
-    /*=============================*/
-    /* user-header                 */
-    /*=============================*/
-    
-    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
-
+:root{    
     /* 
         Responsive sizing steps for adjusting typography or spacing.
         These values are calculated to change smoothly based on screen size.
@@ -69,4 +30,50 @@
 
     /*! Use this one if you need a step that grows really fast */
     --step-3-plus: clamp(1.555rem, 0.1057rem + 7.2467vw, 5.7219rem);
+
+    /*============================*/
+    /* Fonts                      */
+    /*============================*/
+
+    /*TODO: Find a font */
+    --main-font: Poppins;
+    
+    /*=============================*/
+    /* user-header                 */
+    /*=============================*/
+    
+    --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 3px rgb(78, 78, 78));
+
+    /*=============================*/
+    /* Sidemenu/content            */
+    /*=============================*/ 
+
+    --page-grid-settings-sidemenu-collapsed: var(--step-7) auto;
+    --page-grid-settings-sidemenu-expended: ; /*ToDo add sizing for sidemenu expended*/
+    
+    /* Global CSS variables related to the page content */ 
+    --page-content-bg-colour: #f2f6fa;
+
+    /*=============================*/
+    /* Assignments grid            */
+    /*=============================*/ 
+
+    /* Max width of assignments grid container */
+    --assignments-grid-container-max-width: 65rem;
+
+    /*=============================*/
+    /* Assignment card             */
+    /*=============================*/ 
+
+    /* Global CSS variables related to the assignment card */
+    --card-not-uploaded-colour: #a4a9ad;
+    --card-not-reviewed-colour: #fecb5c;
+    --card-reviewed-colour: #7ecdce;
+    --card-expired-colour: #fa5873;
+
+    --card-text-colour-for-dark-bg: #ffffff;
+    --card-text-colour-for-light-bg: #a4a9ad;
+
+    --card-content-bg-colour: #ffffff;
+
 }
