@@ -40,6 +40,7 @@
 }
 
 .assignment-card__content{
+    position: relative;
     aspect-ratio: 4 / 4;
     display: flex;
     justify-content: space-around;
@@ -51,6 +52,21 @@
     width: 100%;
     object-fit:contain;
 } 
+
+.assignment-card__grade{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--card-text-colour-for-dark-bg);
+    font-weight: bold;
+    font-size: var(--step-5);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: var(--step-7);
+    text-align: center;
+    line-height: var(--step-7);
+}
 
 .assignment-card__footer{
     display: flex;
