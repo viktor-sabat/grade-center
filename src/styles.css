@@ -4,6 +4,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{    
     /* 
@@ -50,6 +51,7 @@
 
     --dropdown-bg-color: #ffffff;
     --dropdown-border-color: #a4a9ad;
+    --dropdown-label-color: #5B5F62;
 
 
     /*=============================*/

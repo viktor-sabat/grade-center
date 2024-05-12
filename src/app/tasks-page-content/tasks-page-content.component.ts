@@ -10,5 +10,6 @@ import { TaskFiltersComponent } from '../task-filters/task-filters.component';
   styleUrl: './tasks-page-content.component.css'
 })
 export class TasksPageContentComponent {
-
+  assignmentsTotal: number = 69
+  assignmentsReviewed: number = 42
 }

@@ -1,0 +1,24 @@
+.tasks-page__title{
+    font-size: var(--step-2);
+    font-weight: bold;
+    margin: var(--step-0);
+}
+
+.tasks-page__filter-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tasks-page__labels{
+    color: var(--dropdown-label-color);
+    margin-left: var(--step-0);
+}
+
+.tasks-page__total-assignments-label{
+    line-height: var(--step-9);
+}
+
+.tasks-page__reviewed-assignments-label{
+    margin: var(--step-0);
+}
