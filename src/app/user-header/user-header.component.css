@@ -25,8 +25,12 @@
     width: var(--step-7);
     object-fit: cover;
 }
+.header__paragraph {
+    font-size: var(--step-1);
+}
 .header__select {
     font-size: var(--step-0);
+    width: var(--step-6);
     background-color: transparent;
     border: none;
 }
@@ -36,8 +40,9 @@
 /*ToDo Give option cursor pointer if possible*/
 
 .header__logout {
-    margin-right: var(--step-8);
+    margin-right: var(--step-2);
     margin-left: var(--step-2);
+    width: var(--step-1);
 }
 .header__logout:hover {
     cursor: pointer;
