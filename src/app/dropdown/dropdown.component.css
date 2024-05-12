@@ -8,3 +8,7 @@
     padding-left: var(--step-0);
     margin-right: var(--step-3);
 }
+
+.dropdown:hover{
+    cursor: pointer;
+}
