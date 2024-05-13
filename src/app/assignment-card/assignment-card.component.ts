@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'tlr-assignment-card',
@@ -11,8 +11,13 @@ import { Component } from '@angular/core';
 export class AssignmentCardComponent {
   // Boolean variables representing different states of the assignment card.
   // Based on these variables, the colour of the card will be determined
+  @Input()
   isAssignmentUploaded: boolean = false;
+
+  @Input()
   isAssignmentReviewed: boolean = false;
+
+  @Input()
   isAssignmentExpired: boolean = true;
 
   // Date for deadlines in assignment card

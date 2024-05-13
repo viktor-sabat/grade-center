@@ -1,21 +1,5 @@
 <section [className]="'assignments-grid'">
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
-    <tlr-assignment-card></tlr-assignment-card>
+    @for (AssignmentStatus of AssignmentStatusParameters; track AssignmentStatus){
+        <tlr-assignment-card [isAssignmentUploaded]="AssignmentStatus[0]" [isAssignmentReviewed]="AssignmentStatus[1]" [isAssignmentExpired]="AssignmentStatus[2]"></tlr-assignment-card>
+      }
 </section>

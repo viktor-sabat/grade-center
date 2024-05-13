@@ -9,5 +9,44 @@ import { AssignmentCardComponent } from '../assignment-card/assignment-card.comp
   styleUrl: './assignments-grid.component.css'
 })
 export class AssignmentsGridComponent {
+  // Represents an array with a set of three boolean variables to define the card status
+  AssignmentStatusParameters: undefined | boolean[][] = [
+    [false, false, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [true, false, false],
+    [true, true, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, false],
+    [true, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [false, false, false],
+    [true, true, false],
+    [true, true, false],
+    [false, false, false],
+    [true, false, false],
+    [true, true, false],
+    [false, false, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [true, true, false],
+    [true, false, false],
+    [true, true, false],
+    [true, true, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [true, true, false],
+    [true, true, false],
+    [true, true, false],
+  ];  
+
 
 }
