@@ -21,17 +21,22 @@ export class AssignmentCardComponent {
   isAssignmentExpired: boolean = true;
 
   // Date for deadlines in assignment card
+  @Input()
   deadlineDate: string = "20.04.2024";
 
   // Represents the title of the assignment card
+  @Input()
   assignmentTitle: string = "Assignment Title..."
 
   // Represents the status of the assignment card
+  @Input()
   assignmentStatusTitle: string = "Uploaded"
   
   // Represents the upload date on the assignment card
+  @Input()
   uploadDate: string = "19.04.2024"
 
   // Represents the assignment grade
+  @Input()
   assignmentGrade: string = "12";
 }
