@@ -8,13 +8,12 @@
     display: grid;
     gap: var(--step--1);
     /* More info about repeat() function here -> https://www.sitepoint.com/css-grid-repeat-function/#usingrepeatwithautofitandautofill */
-    grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 30), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--step-0) * 22), 1fr));
 }
 
 .contact__section {
+    min-height: calc(var(--step-3)*10);
     padding: var(--step-0);
-    height: var(--page-height-settings-content-article);
-    width: var(--page-with-settings-content-article);
     background-color: white;
 }
 
@@ -27,7 +26,7 @@
 
 .contact__title {
     margin-bottom: var(--step-1);
-    font-size: var(--step-2);
+    font-size: var(--step-1);
     border-bottom: 1pt solid black;
 }
 
@@ -51,7 +50,7 @@
 
 .contact__item {
     margin: var(--step-0) 0 var(--step-0) var(--step-2);
-    font-size: var(--step-1);
+    font-size: var(--step-0);
 }
 
 .contact__item--title {
