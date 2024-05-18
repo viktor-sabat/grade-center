@@ -8,50 +8,45 @@ import { AssignmentCardComponent } from '../assignment-card/assignment-card.comp
   templateUrl: './assignments-grid.component.html',
   styleUrl: './assignments-grid.component.css'
 })
-
-
 export class AssignmentsGridComponent {
-  Assignments: Array<Assignment> = [
-    {
-      title: "Philosophy Essay Revision",
-      isUploaded: true,
-      isReviewed: true,
-      isExpired: false,
-      deadlineDate: "12.03.2024",
-      statusTitle: "Uploaded",
-      uploadDate: "14.05.2024",
-      grade: 90,
-    },
-    {
-      title: "Philosophy Essay Revision",
-      isUploaded: true,
-      isReviewed: false,
-      isExpired: false,
-      deadlineDate: "29.03.2024",
-      statusTitle: "Uploaded",
-      uploadDate: "22.03.2024",
-      grade: 17,
-    },
-    {
-      title: "Philosophy Essay Revision",
-      isUploaded: false,
-      isReviewed: false,
-      isExpired: false,
-      deadlineDate: "12.03.2024",
-      statusTitle: "Uploaded",
-      uploadDate: "14.05.2024",
-      grade: 0,
-    },
-    {
-      title: "Philosophy Essay Revision",
-      isUploaded: false,
-      isReviewed: false,
-      isExpired: true,
-      deadlineDate: "12.03.2024",
-      statusTitle: "Expired",
-      uploadDate: "14.05.2024",
-      grade: 0,
-    }
-  ]
+  // Represents an array with a set of three boolean variables to define the card status
+  AssignmentStatusParameters: undefined | boolean[][] = [
+    [false, false, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [true, false, false],
+    [true, true, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, false],
+    [true, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [false, false, false],
+    [true, true, false],
+    [true, true, false],
+    [false, false, false],
+    [true, false, false],
+    [true, true, false],
+    [false, false, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [true, true, false],
+    [true, false, false],
+    [true, true, false],
+    [true, true, false],
+    [false, false, false],
+    [true, true, false],
+    [true, false, false],
+    [false, false, true],
+    [true, true, false],
+    [true, true, false],
+    [true, true, false],
+  ];  
+
 
 }
