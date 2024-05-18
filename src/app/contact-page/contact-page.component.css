@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.contact__title {
+    font-size: var(--step-2);
+    font-weight: bold;
+    margin: var(--step-0);
+}
+
 .contact {
     padding: var(--step-0);
     background-color: var(--page-content-bg-colour);
@@ -17,21 +23,10 @@
     background-color: white;
 }
 
-.contact__section--social {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact__title {
+.contact__section-title {
     margin-bottom: var(--step-1);
     font-size: var(--step-1);
     border-bottom: 1pt solid black;
-}
-
-.contact__title--social{
-    border: none;
 }
 
 .contact__list {
@@ -56,8 +51,4 @@
 .contact__item--title {
     margin: 0;
     font-weight: bold;
-}
-.contact__social-icon {
-    margin: 0 var(--step-0);
-    width: var(--step-3);
 }
