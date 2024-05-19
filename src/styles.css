@@ -44,6 +44,7 @@
     /*=============================*/
     
     --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 2px #a4a9ad);
+    --user-header-bg-colour: #ffffff;
 
     /*=============================*/
     /* Dropdown                    */
