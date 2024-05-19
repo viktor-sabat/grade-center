@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-
+import { RouterLink } from '@angular/router';
 @Component({
-  selector: 'app-sidemenu-expended',
+  selector: 'tlr-sidemenu-expended',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './sidemenu-expended.component.html',
   styleUrl: './sidemenu-expended.component.css'
 })
