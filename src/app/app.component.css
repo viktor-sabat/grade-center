@@ -4,6 +4,9 @@
     grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
     height: 100vh;
 }
+.app-section--expended {
+    grid-template-columns: var(--page-grid-settings-sidemenu-expended);
+}
 .page-content{
     background-color: var(--page-bg-color);
     height: 100%;
