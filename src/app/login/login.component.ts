@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { UserInfo } from '../user-info';
-import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'tlr-user-login-form',
   standalone: true,
-  imports: [FormsModule, JsonPipe],
+  imports: [FormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -16,8 +15,16 @@ export class LoginComponent {
     password: ''
   }
 
+  // Creating a custom event
+  @Output()
+  isSuccessfullyLoggedIn = new EventEmitter();
+
+  // This method handles the ngSubmit event (form submission)
   onLogin(form: NgForm){
-    console.log("you have just logged in!", form.value);
+    // Emitting successful log in event which will be handled inside the app.component 
+    this.isSuccessfullyLoggedIn.emit();
+
+    // Resetting the form
     this.userInfo = {
       username: '',
       password: ''

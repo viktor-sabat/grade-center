@@ -5,7 +5,6 @@ import { TasksPageContentComponent } from './tasks-page-content/tasks-page-conte
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
 export const routes: Routes = [
-    {path: '', component: AssignmentsGridComponent},
     {path: 'Tasks', component: TasksPageContentComponent},
     {path: 'Contact', component: ContactPageComponent}
 ];
