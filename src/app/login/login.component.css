@@ -1,0 +1,34 @@
+.login-window{
+    width: calc(var(--step-9)*100);
+}
+
+.login-window__account-type{
+    display: flex;
+    flex-direction: row;
+    gap: var(--step-3);
+}
+
+.login-window__select-option input[type="radio"]:checked + img{
+    border: solid 1px black;
+}
+
+.login-account-type__button{
+    width: calc(var(--step-9)*3);
+    height: calc(var(--step-9)*3);
+    opacity: 0%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.login-account-type__button-image{
+    width: calc(var(--step-9)*3);
+    height: calc(var(--step-9)*3);
+}
+
+.login-window__form{
+
+}
+
+.login-form{
+
+}
