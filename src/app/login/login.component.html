@@ -1,5 +1,16 @@
-<form #form="ngForm" class="login-form" (ngSubmit)="onLogin(form)">
-    <input [(ngModel)]="userInfo.username" name="username" class="login-form__input-field login-form__username" type="text" placeholder="Username">
-    <input [(ngModel)]="userInfo.password" name="password" class="login-form__input-field login-form__password" type="text" placeholder="Password">
-    <button>Log in</button>
-</form>
+<section class="login-window">
+    <article class="login-window__account-type">
+        <input type="radio" name="" id=""> 
+            <img src="../../assets/Icons/student.svg" alt="">
+            <img src="../../assets/Icons/teacher.svg" alt="">
+            <img src="../../assets/Icons/teacher.svg" alt="">
+
+    </article>
+    <article class="login-window__form">
+        <form #form="ngForm" class="login-form" (ngSubmit)="onLogin(form)">
+            <input [(ngModel)]="userInfo.username" name="username" class="login-form__input-field login-form__username" type="text" placeholder="Username">
+            <input [(ngModel)]="userInfo.password" name="password" class="login-form__input-field login-form__password" type="text" placeholder="Password">
+            <button>Log in</button>
+        </form>
+    </article>
+</section>
