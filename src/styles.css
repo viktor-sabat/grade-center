@@ -38,9 +38,22 @@
 
     /*TODO: Find a font */
     --main-font: Poppins;
+
+    /*=============================*/
+    /* Login page                  */
+    /*=============================*/
+
+    --login-page-bg-colour: #f2f6fa;
+    --login-window-bg-colour: #ffffff;
+    --login-window-login-button-bg-colour: #7ecdce;
+    --login-window-login-button-text-colour: #ffffff;
+    --login-window-login-button-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    --login-window-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --login-window-input-field-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     
     /*=============================*/
-    /* user-header                 */
+    /* User header                 */
     /*=============================*/
     
     --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 2px #a4a9ad);
