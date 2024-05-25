@@ -13,21 +13,22 @@
         --step--5 is the smallest and --step-9 is the biggest one.
     */
 
-    --step--5: clamp(0.3013rem, 0.2921rem + 0.0457vw, 0.3275rem);
-    --step--4: clamp(0.3619rem, 0.3454rem + 0.0826vw, 0.4094rem);
-    --step--3: clamp(0.4338rem, 0.4066rem + 0.1359vw, 0.5119rem);
-    --step--2: clamp(0.5206rem, 0.4791rem + 0.2076vw, 0.64rem);
-    --step--1: clamp(0.625rem, 0.5641rem + 0.3043vw, 0.8rem);
-    --step-0: clamp(0.75rem, 0.663rem + 0.4348vw, 1rem);
-    --step-1: clamp(0.9rem, 0.7783rem + 0.6087vw, 1.25rem);
-    --step-2: clamp(1.08rem, 0.9122rem + 0.8391vw, 1.5625rem);
-    --step-3: clamp(1.2963rem, 1.0678rem + 1.1424vw, 1.9531rem);
-    --step-4: clamp(1.555rem, 1.2467rem + 1.5413vw, 2.4413rem);
-    --step-5: clamp(1.8663rem, 1.4539rem + 2.062vw, 3.0519rem);
-    --step-6: clamp(2.2394rem, 1.6913rem + 2.7402vw, 3.815rem);
-    --step-7: clamp(2.6875rem, 1.9638rem + 3.6185vw, 4.7681rem);
-    --step-8: clamp(3.225rem, 2.2735rem + 4.7576vw, 5.9606rem);
-    --step-9: clamp(3.87rem, 2.6246rem + 6.2272vw, 7.4506rem);
+    --step--5: clamp(0.1758rem, 0.1483rem + 0.2314vi, 0.3277rem);
+    --step--4: clamp(0.211rem, 0.175rem + 0.3027vi, 0.4096rem);
+    --step--3: clamp(0.2532rem, 0.2063rem + 0.3944vi, 0.512rem);
+    --step--2: clamp(0.3038rem, 0.243rem + 0.5123vi, 0.64rem);
+    --step--1: clamp(0.3646rem, 0.2858rem + 0.6635vi, 0.8rem);
+    --step-0: clamp(0.4375rem, 0.3357rem + 0.8571vi, 1rem);
+    --step-1: clamp(0.525rem, 0.3938rem + 1.1048vi, 1.25rem);
+    --step-2: clamp(0.63rem, 0.4613rem + 1.421vi, 1.5625rem);
+    --step-3: clamp(0.756rem, 0.5394rem + 1.8242vi, 1.9531rem);
+    --step-4: clamp(0.9072rem, 0.6296rem + 2.3378vi, 2.4414rem);
+    --step-5: clamp(1.0886rem, 0.7334rem + 2.9914vi, 3.0518rem);
+    --step-6: clamp(1.3064rem, 0.8525rem + 3.8222vi, 3.8147rem);
+    --step-7: clamp(1.5676rem, 0.9885rem + 4.8773vi, 4.7684rem);
+    --step-8: clamp(1.8812rem, 1.143rem + 6.2161vi, 5.9605rem);
+    --step-9: clamp(2.2574rem, 1.3177rem + 7.9134vi, 7.4506rem);
+
 
     /*! Use this one if you need a step that grows really fast */
     --step-3-plus: clamp(1.555rem, 0.1057rem + 7.2467vw, 5.7219rem);
@@ -38,12 +39,26 @@
 
     /*TODO: Find a font */
     --main-font: Poppins;
+
+    /*=============================*/
+    /* Login page                  */
+    /*=============================*/
+
+    --login-page-bg-colour: #f2f6fa;
+    --login-window-bg-colour: #ffffff;
+    --login-window-login-button-bg-colour: #7ecdce;
+    --login-window-login-button-text-colour: #ffffff;
+    --login-window-login-button-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    --login-window-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --login-window-input-field-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     
     /*=============================*/
-    /* user-header                 */
+    /* User header                 */
     /*=============================*/
     
     --page-filter-drop-shadow-settings-header: drop-shadow(var(--step-0) 0 2px #a4a9ad);
+    --user-header-bg-colour: #ffffff;
 
     /*=============================*/
     /* Dropdown                    */
