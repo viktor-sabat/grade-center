@@ -1,7 +1,10 @@
 <section class="sidemenu">
     <div class="sidemenu__div">
         <img class="sidemenu__logo" src="../../assets/Icons/toledoer-logo.svg" alt="">
-        <img class="sidemenu__expended" src="../../assets/Icons/expended-icon.svg" alt="">
+        <label class="sidemenu__label">
+            <input class="sidemenu__input" type="checkbox" checked (change)="onCheckboxClick()">
+            <img class="sidemenu__expended" src="../../assets/Icons/expended-icon.svg" alt="">
+        </label>
     </div>
     <nav class="sidemenu__nav">
         <ul class="sidemenu__list">

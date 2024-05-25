@@ -18,6 +18,11 @@
 .sidemenu__logo {
     width: var(--step-9);
 }
+.sidemenu__input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
 .sidemenu__expended {
     width: var(--step-1);
 }

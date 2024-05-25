@@ -9,6 +9,11 @@
     flex-direction: column;
     align-items: center;
 }
+.sidemenu__input {
+    appearance: none;
+    outline: none;
+    pointer-events: none;
+}
 .sidemenu__collapsed {
     margin-bottom: var(--step-1);
     width: var(--step-1);

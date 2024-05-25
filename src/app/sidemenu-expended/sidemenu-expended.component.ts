@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'tlr-sidemenu-expended',
   standalone: true,
@@ -7,6 +8,12 @@ import { RouterLink } from '@angular/router';
   templateUrl: './sidemenu-expended.component.html',
   styleUrl: './sidemenu-expended.component.css'
 })
-export class SidemenuExpendedComponent {
 
+export class SidemenuExpendedComponent {
+  isExpended: boolean = true;
+
+  onCheckboxClick() {
+    this.isExpended = false;
+    console.log(this.isExpended);
+  }
 }

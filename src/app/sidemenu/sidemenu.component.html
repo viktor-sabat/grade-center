@@ -1,5 +1,8 @@
 <section class="sidemenu">
-    <img class="sidemenu__collapsed" src="../../assets/Icons/collapsed-icon.svg" alt="">
+    <label class="sidemenu__label">
+        <input class="sidemenu__input" type="checkbox" (change)="onCheckboxClick()">
+        <img class="sidemenu__collapsed" src="../../assets/Icons/collapsed-icon.svg" alt="">
+    </label>
     <nav class="sidemenu__nav">
         <ul class="sidemenu__list">
             <li class="sidemenu__item"><a class="sidemenu__link" routerLink="/"><img class="sidemenu__icon" src="../../assets/Icons/home-logo.svg"></a></li>
