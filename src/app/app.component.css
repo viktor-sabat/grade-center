@@ -1,11 +1,11 @@
-/*ToDo create 2 more classes for expended and collapsed menu*/
+/*ToDo create 2 more classes for expanded and collapsed menu*/
 .app-section {
     display: grid;
     grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
     height: 100vh;
 }
-.app-section--expended {
-    grid-template-columns: var(--page-grid-settings-sidemenu-expended);
+.app-section--expanded {
+    grid-template-columns: var(--page-grid-settings-sidemenu-expanded);
 }
 .page-content{
     background-color: var(--page-bg-color);

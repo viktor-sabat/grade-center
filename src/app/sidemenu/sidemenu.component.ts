@@ -10,10 +10,10 @@ import { RouterLink } from '@angular/router';
 })
 
 export class SidemenuComponent {
-  isExpended: boolean = false;
+  isExpanded: boolean = false;
 
   onCheckboxClick() {
-    this.isExpended = true;
-    console.log(this.isExpended);
+    this.isExpanded = true;
+    console.log(this.isExpanded);
   }
 }

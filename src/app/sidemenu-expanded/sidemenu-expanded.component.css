@@ -23,10 +23,10 @@
     outline: none;
     pointer-events: none;
 }
-.sidemenu__expended {
+.sidemenu__expanded {
     width: var(--step-1);
 }
-.sidemenu__expended:hover {
+.sidemenu__expanded:hover {
     cursor: pointer;
 }
 .sidemenu__list {
