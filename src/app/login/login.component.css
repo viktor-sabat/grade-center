@@ -127,4 +127,5 @@
 
 .login-form_login-button:hover{
     box-shadow: var(--login-window-login-button-shadow);
+    cursor: pointer;
 }
