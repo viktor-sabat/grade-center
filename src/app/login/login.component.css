@@ -16,6 +16,7 @@
 .login-window-title{
     text-align: center;
     padding: var(--step-1);
+    font-size: var(--step-3);
 }
 
 .login-window__account-type{
