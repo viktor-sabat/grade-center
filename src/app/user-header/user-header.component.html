@@ -4,10 +4,10 @@
         <p class="header__paragraph">Tester Wesley</p>
     </section>
     <section class="header__section">
-        <select class="header__select" name="" id="">
+        <select class="header__select" matTooltip="Select your preferred language" name="" id="">
             <option class="header__option" value="">EN</option>
             <option class="header__option" value="">NL</option>
         </select>
-        <img class="header__logout" src="../../assets/Icons/logout-icon.svg" alt="">
+        <button class="header__logout-button" matTooltip="Click to log out" (click)="onLogout()"></button>
     </section>
 </header>

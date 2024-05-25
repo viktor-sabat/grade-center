@@ -4,7 +4,7 @@
 .header {
     padding: var(--step-5) var(--step-0);
     height: var(--step-9);
-    background-color: white;
+    background-color: var(--user-header-bg-colour);
     filter: var(--page-filter-drop-shadow-settings-header);
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,19 @@
     margin-left: var(--step-2);
     width: var(--step-1);
 }
-.header__logout:hover {
+
+.header__logout-button {
+    margin-right: var(--step-8);
+    margin-left: var(--step-2);
+    width: var(--step-1);
+    border: none;
+    background-color: var(--user-header-bg-colour);
+    aspect-ratio: 1 / 1;
+    background-image: url(../../assets/Icons/logout-icon.svg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.header__logout-button:hover {
     cursor: pointer;
 }
 
