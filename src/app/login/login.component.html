@@ -1,0 +1,38 @@
+<div class="login-page-content">
+    <section class="login-window">
+        <h1 class="login-window-title">Choose Account Type</h1>
+        <article class="login-window__account-type">
+            <div class="login-window__select-option">
+                <input class="login-account-type__button" value="mentee" (change)="onAccountTypeChange($event)" type="radio" name="account-type"> 
+                <img class="login-account-type__button-image" src="../../assets/Icons/student.svg" alt="">
+            </div>
+            <div class="login-window__select-option">
+                <input class="login-account-type__button" value="mentor" (change)="onAccountTypeChange($event)" type="radio" name="account-type"> 
+                <img class="login-account-type__button-image" src="../../assets/Icons/teacher.svg" alt="">
+            </div>
+            <div class="login-window__select-option">
+                <input class="login-account-type__button" value="mentor/mentee" (change)="onAccountTypeChange($event)" type="radio" name="account-type"> 
+                <img class="login-account-type__button-image" src="../../assets/Icons/teacher.svg" alt="">
+            </div>
+        </article>
+        <article class="login-page__greeting-container">
+            <p class="login-page__greeting">{{userGreeting}}</p>
+            <p class="login-page__call-to-action">{{userCallToAction}}</p>
+        </article>
+        <article class="login-window__form">
+            <form #form="ngForm" class="login-form" (ngSubmit)="onLogin(form)">
+                <div class="login-form__credentials-section">
+                    <input [(ngModel)]="userInfo.username" name="username" class="login-form__input-field login-form__username" type="text" placeholder="Username">
+                    <input [(ngModel)]="userInfo.password" name="password" class="login-form__input-field login-form__password" type="text" placeholder="Password">
+                </div>
+                <div class="login-form__submission-section">
+                    <div class="login-form__remember-me-wrapper">
+                        <input type="checkbox" class="login-form_remember-me-ckeckbox" name="remember-me-checkbox" id="remember-me-checkbox">
+                        <label for="remember-me-checkbox" class="login-form_remember-me-label">Remember me</label>
+                    </div>
+                    <button class="login-form_login-button">Log in</button>
+                </div>
+            </form>
+        </article>
+    </section>
+</div>
