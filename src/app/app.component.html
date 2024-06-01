@@ -1,8 +1,13 @@
-<section class="app-section app-section--expanded">
-    <tlr-sidemenu></tlr-sidemenu>
-    <section class="page-content">
-        <tlr-user-header></tlr-user-header>
-        <!--With this tag we tell where the content pages will render there components-->
-        <router-outlet></router-outlet>
+@if(!isLoggedIn){
+    <tlr-user-login-form (isSuccessfullyLoggedIn)="handleLogin()"></tlr-user-login-form>
+}
+@else {
+    <section class="app-section app-section--expanded">
+        <tlr-sidemenu></tlr-sidemenu>
+        <section class="page-content">
+            <tlr-user-header (isSuccessfullyLoggedOut)="handleLogout()"></tlr-user-header>
+            <!--With this tag we tell where the content pages will render there components-->
+            <router-outlet></router-outlet>
+        </section>
     </section>
-</section>
+}

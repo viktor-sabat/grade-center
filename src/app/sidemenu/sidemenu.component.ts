@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'tlr-sidemenu-collapsed',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, MatTooltipModule],
   templateUrl: './sidemenu.component.html',
   styleUrl: './sidemenu.component.css'
 })

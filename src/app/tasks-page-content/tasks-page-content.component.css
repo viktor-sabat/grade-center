@@ -10,13 +10,15 @@
     flex-wrap: wrap;
 }
 
-.tasks-page__labels{
+.tasks-page__label{
     color: var(--dropdown-label-color);
     margin-left: var(--step-0);
+    font-size: var(--step-1);
 }
 
 .tasks-page__total-assignments-label{
-    line-height: var(--step-9);
+    line-height: var(--step-5);
+    padding-right: var(--step-0);
 }
 
 .tasks-page__reviewed-assignments-label{

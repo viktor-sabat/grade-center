@@ -2,44 +2,45 @@
     box-sizing: border-box;
 }
 
-.Profile__title{
+.profile__title{
     font-size: var(--step-2);
     font-weight: bold;
     margin: var(--step-0);
 }
 
-.Profile{
+.profile{
     padding: var(--step-0);
     display: grid;
     gap: var(--step--1);
     grid-template-columns: repeat(auto-fit, minmax(calc(var(--step-0) * 22), 1fr));
 }
 
-.Profile__section {
+.profile__section {
     min-height: calc(var(--step-3)*10);
     padding: var(--step-0);
     background-color: white;
-    border-radius: var(--step-2);
+    border-radius: var(--step-0);
 }
 
-.Profile__section--img {
+.profile__section--content-centered {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.Profile__image{
-    width: clamp(7.8125rem, 5.0951rem + 13.587vw, 15.625rem);
+.profile__image{
+    width: calc(var(--step-9)*1.5);
     object-fit: cover;
-    
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.Profile__input{
-    border: 1px solid #000;
-    color: #666;
-    background-color: var(--page-bg-color);
+.profile__input{
+    color: var(--profile-input-text-color);
+    background-color: var(--profile-input-bg-color);
     padding: var(--step-1);
     margin: var(--step-0);
     list-style: none;
     border-radius: var(--step-4);
+    font-size: var(--step-0);
 }
