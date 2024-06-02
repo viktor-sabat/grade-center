@@ -2,12 +2,13 @@
     <tlr-user-login-form (isSuccessfullyLoggedIn)="handleLogin()"></tlr-user-login-form>
 }
 @else {
-    <section class="app-section">
-        <tlr-sidemenu></tlr-sidemenu>
+    <section class="app-section" [class.app-section--expanded]="isExpanded">
+        <tlr-side-menu class="app-section__side-menu"></tlr-side-menu>
         <section class="page-content">
             <tlr-user-header (isSuccessfullyLoggedOut)="handleLogout()"></tlr-user-header>
             <!--With this tag we tell where the content pages will render there components-->
             <router-outlet></router-outlet>
         </section>
+        <tlr-mobile-menu class="app-section__mobile-menu"></tlr-mobile-menu>
     </section>
 }

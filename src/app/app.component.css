@@ -1,10 +1,32 @@
-/*ToDo create 2 more classes for expended and collapsed menu*/
 .app-section {
     display: grid;
-    grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
-    height: 100vh;
+    grid-template-columns: var(--page-grid-settings-side-menu-collapsed);
+    transition: 0.3s;
+}
+.app-section--expanded {
+    grid-template-columns: var(--page-grid-settings-side-menu-expanded);
+    transition: 0.3s;
 }
 .page-content{
     background-color: var(--page-bg-color);
-    height: 100%;
+    min-height: 100vh;
+}
+.app-section__mobile-menu {
+    display: none;
+}
+
+/*=============================*/
+/* Mobile page                 */
+/*=============================*/
+@media only screen and (max-width: 500px) {
+    .app-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .app-section__side-menu{
+        display: none;
+    }
+    .app-section__mobile-menu {
+        display: block;
+    }
 }
