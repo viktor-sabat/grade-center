@@ -4,14 +4,14 @@ import { RouterLink } from '@angular/router';
 import { SideMenuStateService } from '../side-menu-state.service';
 
 @Component({
-  selector: 'tlr-sidemenu-collapsed',
+  selector: 'tlr-side-menu-collapsed',
   standalone: true,
   imports: [RouterLink, MatTooltipModule],
-  templateUrl: './sidemenu.component.html',
-  styleUrl: './sidemenu.component.css'
+  templateUrl: './side-menu.component.html',
+  styleUrl: './side-menu.component.css'
 })
 
-export class SidemenuComponent {
+export class SideMenuComponent {
   constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {

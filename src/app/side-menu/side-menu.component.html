@@ -1,0 +1,14 @@
+<section class="side-menu">
+    <label class="side-menu__label">
+        <input class="side-menu__input" type="checkbox" (change)="onCheckboxClick()">
+        <img class="side-menu__collapsed" matTooltip="Expand side menu" src="../../assets/Icons/collapsed-icon.svg" alt="">
+    </label>
+    <nav class="side-menu__nav">
+        <ul class="side-menu__list">
+            <li class="side-menu__item" matTooltip="Go to Home"><a class="side-menu__link" routerLink="/"><img class="side-menu__icon" src="../../assets/Icons/home-logo.svg"></a></li>
+            <li class="side-menu__item" matTooltip="Go to Tasks"><a class="side-menu__link" routerLink="/Tasks"><img class="side-menu__icon" src="../../assets/Icons/tasks-logo.svg"></a></li>
+            <li class="side-menu__item" matTooltip="View Profile"><a class="side-menu__link" routerLink="/Profile"><img class="side-menu__icon" src="../../assets/Icons/profile-logo.svg"></a></li>
+            <li class="side-menu__item" matTooltip="Contact Info"><a class="side-menu__link" routerLink="/Contact"><img class="side-menu__icon" src="../../assets/Icons/contact-info-logo.svg"></a></li>
+        </ul>
+    </nav>
+</section>

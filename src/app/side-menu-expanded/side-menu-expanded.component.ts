@@ -4,14 +4,14 @@ import { RouterLink } from '@angular/router';
 import { SideMenuStateService } from '../side-menu-state.service';
 
 @Component({
-  selector: 'tlr-sidemenu-expanded',
+  selector: 'tlr-side-menu-expanded',
   standalone: true,
   imports: [RouterLink, MatTooltipModule],
-  templateUrl: './sidemenu-expanded.component.html',
-  styleUrl: './sidemenu-expanded.component.css'
+  templateUrl: './side-menu-expanded.component.html',
+  styleUrl: './side-menu-expanded.component.css'
 })
 
-export class SidemenuExpandedComponent {
+export class SideMenuExpandedComponent {
   constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {
