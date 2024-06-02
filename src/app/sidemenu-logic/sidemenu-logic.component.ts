@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SidemenuComponent } from '../sidemenu/sidemenu.component';
 import { SidemenuExpandedComponent } from '../sidemenu-expanded/sidemenu-expanded.component';
+import { SideMenuStateService } from '../side-menu-state.service';
 
 @Component({
   selector: 'tlr-sidemenu',
@@ -10,5 +11,13 @@ import { SidemenuExpandedComponent } from '../sidemenu-expanded/sidemenu-expande
   styleUrl: './sidemenu-logic.component.css'
 })
 export class SidemenuLogicComponent {
-  isExpanded: boolean = true;
+  isExpanded: boolean = false;
+
+  constructor(private sideMenuStateService: SideMenuStateService) {}
+
+  ngOnInit() {
+    this.sideMenuStateService.isExpanded$.subscribe(isExpanded => {
+      this.isExpanded = isExpanded;
+    });
+  }
 }

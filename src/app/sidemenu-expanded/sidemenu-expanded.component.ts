@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
+import { SideMenuStateService } from '../side-menu-state.service';
 
 @Component({
   selector: 'tlr-sidemenu-expanded',
@@ -11,10 +12,9 @@ import { RouterLink } from '@angular/router';
 })
 
 export class SidemenuExpandedComponent {
-  isExpanded: boolean = true;
+  constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {
-    this.isExpanded = false;
-    console.log(this.isExpanded);
+    this.sideMenuStateService.toggleIsExpanded();
   }
 }

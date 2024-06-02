@@ -2,7 +2,7 @@
     <tlr-user-login-form (isSuccessfullyLoggedIn)="handleLogin()"></tlr-user-login-form>
 }
 @else {
-    <section class="app-section app-section--expanded">
+    <section class="app-section" [class.app-section--expanded]="isExpanded">
         <tlr-sidemenu></tlr-sidemenu>
         <section class="page-content">
             <tlr-user-header (isSuccessfullyLoggedOut)="handleLogout()"></tlr-user-header>

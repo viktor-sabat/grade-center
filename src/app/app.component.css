@@ -1,11 +1,12 @@
-/*ToDo create 2 more classes for expanded and collapsed menu*/
 .app-section {
     display: grid;
     grid-template-columns: var(--page-grid-settings-sidemenu-collapsed);
     height: 100vh;
+    transition: 0.3s;
 }
 .app-section--expanded {
     grid-template-columns: var(--page-grid-settings-sidemenu-expanded);
+    transition: 0.3s;
 }
 .page-content{
     background-color: var(--page-bg-color);

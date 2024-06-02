@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserHeaderComponent } from './user-header/user-header.component';
 import { SidemenuLogicComponent } from './sidemenu-logic/sidemenu-logic.component';
+import { SideMenuStateService } from './side-menu-state.service';
 import { TasksPageContentComponent } from './tasks-page-content/tasks-page-content.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
@@ -22,6 +23,11 @@ export class AppComponent {
   // Variable that indicates whether the login state has been retrieved from the local storage
   isLoggedInFromStorage: boolean = false;
 
+  // variable to indicate whether the sidemenu is gonna be expended
+  isExpanded: boolean = false;
+
+  constructor( private sideMenuStateService: SideMenuStateService) {}
+
   ngOnInit() {
     // Check for login state stored in local storage
     this.isLoggedInFromStorage = localStorage.getItem('isLoggedIn') === 'true';
@@ -31,6 +37,10 @@ export class AppComponent {
     if (this.isLoggedInFromStorage) {
       this.isLoggedIn = true;
     }
+
+    this.sideMenuStateService.isExpanded$.subscribe(expanded => {
+      this.isExpanded = expanded; // Manually trigger change detection
+    });
   }
 
   // Handles the successful login event

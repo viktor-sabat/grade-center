@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
+import { SideMenuStateService } from '../side-menu-state.service';
 
 @Component({
   selector: 'tlr-sidemenu-collapsed',
@@ -11,10 +12,9 @@ import { RouterLink } from '@angular/router';
 })
 
 export class SidemenuComponent {
-  isExpanded: boolean = false;
+  constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {
-    this.isExpanded = true;
-    console.log(this.isExpanded);
+    this.sideMenuStateService.toggleIsExpanded();
   }
 }
