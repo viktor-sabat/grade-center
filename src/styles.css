@@ -66,11 +66,11 @@
 
 
     /*=============================*/
-    /* Sidemenu/content            */
+    /* Side menu/content            */
     /*=============================*/ 
 
-    --page-grid-settings-sidemenu-collapsed: var(--step-7) auto;
-    --page-grid-settings-sidemenu-expanded: clamp(7.5rem, 5.7609rem + 8.6957vw, 12.5rem) auto;
+    --page-grid-settings-side-menu-collapsed: var(--step-7) auto;
+    --page-grid-settings-side-menu-expanded: clamp(7.5rem, 5.7609rem + 8.6957vw, 12.5rem) auto;
     --page-bg-color: #f2f6fa;
     
     /* Global CSS variables related to the page content */ 

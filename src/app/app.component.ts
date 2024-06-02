@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { UserHeaderComponent } from './user-header/user-header.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { SideMenuLogicComponent } from './side-menu-logic/side-menu-logic.component';
 import { SideMenuStateService } from './side-menu-state.service';
 import { TasksPageContentComponent } from './tasks-page-content/tasks-page-content.component';
@@ -11,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserHeaderComponent, SideMenuLogicComponent, TasksPageContentComponent, ProfilePageComponent, ContactPageComponent, LoginComponent],
+  imports: [RouterOutlet, UserHeaderComponent, MobileMenuComponent, SideMenuLogicComponent, TasksPageContentComponent, ProfilePageComponent, ContactPageComponent, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
