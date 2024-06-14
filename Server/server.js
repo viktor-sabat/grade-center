@@ -273,7 +273,85 @@ const assignments = [
       grade: null
     }
 ];
-  
+
+const students = [
+    {
+      id: 1,
+      Name: "Wesley",
+      firstName: "Tester",
+      phoneNumber: "0494 123 456",
+      email: "tester.wesley@gmail.com",
+      dateOfBirth: "19.04.2003",
+      academicYear: "2023-2024",
+      address: "Teststraat 70",
+      region: "Vlaams-brabant",
+      group: 1
+    },
+    {
+      id: 2,
+      Name: "Demol",
+      firstName: "Quincy",
+      phoneNumber: "0494 654 321",
+      email: "quincy.demol@gmail.com",
+      dateOfBirth: "01.09.2004",
+      academicYear: "2023-2024",
+      address: "Computerlaan 21",
+      region: "Vlaams-brabant",
+      group: 2
+    },
+    {
+      id: 3,
+      Name: "Leribaux",
+      firstName: "Mathias",
+      phoneNumber: "0494 367 620",
+      email: "mathias.leribaux@gmail.com",
+      dateOfBirth: "08.02.2002",
+      academicYear: "2023-2024",
+      address: "Appelboomstraat 34",
+      region: "Oost-Vlaanderen",
+      group: 1
+    },
+    {
+      id: 4,
+      Name: "Solia",
+      firstName: "Akasha",
+      phoneNumber: "0494 664 634",
+      email: "akasha.solia@gmail.com",
+      dateOfBirth: "06.12.2002",
+      academicYear: "2023-2024",
+      address: "Ooievaarstraat 52",
+      region: "Oost-Vlaanderen",
+      group: 3
+    },
+    {
+      id: 5,
+      Name: "Sabat",
+      firstName: "Viktor",
+      phoneNumber: "0494 648 231",
+      email: "viktor.sabat@gmail.com",
+      dateOfBirth: "25.06.2002",
+      academicYear: "2023-2024",
+      address: "Jonkvrouwmattestraat 14",
+      region: "Vlaams-Brabant",
+      group: 2
+    },
+    {
+      id: 6,
+      Name: "Johnson",
+      firstName: "Alvin",
+      phoneNumber: "0494 987 520",
+      email: "alvin.johnson@gmail.com",
+      dateOfBirth: "31.07.2004",
+      academicYear: "2023-2024",
+      address: "Beeldhouwersstraat 9",
+      region: "Oost-Vlaanderen",
+      group: 3
+    }
+];
+
+app.get('/student', cors(),(req, res) => {
+  res.json(students)
+});
 
 app.get('/student/assignments', cors(),(req, res) => {
     res.json(assignments);
