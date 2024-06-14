@@ -11,6 +11,11 @@ import { Component, Input } from '@angular/core';
 export class AssignmentCardComponent {
   // Boolean variables representing different states of the assignment card.
   // Based on these variables, the colour of the card will be determined
+
+  // The unique id of an assignment 
+  @Input()
+  assignmentId: number = 0;
+
   @Input()
   isAssignmentUploaded: boolean = false;
 
