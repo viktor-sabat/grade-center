@@ -6,7 +6,7 @@
     'assignment-card--expired': isAssignmentExpired
 }">
     <div class="assignment-card__header">
-        <p class="assignment-card__title">{{assignmentTitle}}</p>
+        <p class="assignment-card__title">{{assignmentTitle | truncate: 13}}</p>
         <img class="assignment-card__icon" src="../../assets/Icons/info_icon.svg" alt="Information icon">
     </div>
     <div class="assignment-card__content">

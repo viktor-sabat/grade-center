@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { TruncatePipe } from '../pipes/truncate.pipe';
 
 @Component({
   selector: 'tlr-assignment-card',
   standalone: true,
-  imports: [],
+  imports: [TruncatePipe],
   templateUrl: './assignment-card.component.html',
   styleUrl: './assignment-card.component.css'
 })
