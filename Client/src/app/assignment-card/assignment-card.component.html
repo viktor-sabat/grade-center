@@ -6,8 +6,8 @@
     'assignment-card--expired': isAssignmentExpired
 }">
     <div class="assignment-card__header">
-        <p class="assignment-card__title">{{assignmentTitle | truncate: 13}}</p>
-        <img class="assignment-card__icon" src="../../assets/Icons/info_icon.svg" alt="Information icon">
+        <p class="assignment-card__title">{{assignmentTitle | truncate: 16}}</p>
+        <img class="assignment-card__icon" [matTooltip]='tooltipContent()' src="../../assets/Icons/info_icon.svg" alt="Information icon">
     </div>
     <div class="assignment-card__content">
         <img class="assignment-card__background-image" src="../../assets/Images/assignment-attached-doc.png" alt="Background image">
