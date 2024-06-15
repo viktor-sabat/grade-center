@@ -19,4 +19,7 @@
 .subject-page__total-subjects-label{
     line-height: var(--step-5);
     padding-right: var(--step-0);
+    color: var(--dropdown-label-color);
+    margin-left: var(--step-0);
+    font-size: var(--step-1);
 }

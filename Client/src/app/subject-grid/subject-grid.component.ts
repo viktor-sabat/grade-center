@@ -15,15 +15,18 @@ import { Subjects } from '../models/ISubjects';
 export class subjectGridComponent implements OnInit {
   subjects: Subjects[] = [];
 
+  // Emits the total number of subjects to the parent component
+  @Output() subjectsLength = new EventEmitter<number>();
+
   // Injecting the student service
   constructor(private studentService: StudentService) {}
 
   ngOnInit() {
     this.studentService.getSubjects().subscribe((subjects) => {
       this.subjects = subjects;
+      this.emitSubjectCounts()
     });
   }
-  @Output() subjectsLength = new EventEmitter<number>();
 
   emitSubjectCounts() {
     this.subjectsLength.emit(this.getAllSubjectsCount());
