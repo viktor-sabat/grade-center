@@ -15,7 +15,8 @@ import { HttpClient } from '@angular/common/http';
 
 export class UserHeaderComponent implements OnInit {
   students: Student[] = [];
-
+  student: Student | undefined;
+  
   @Output()
   isSuccessfullyLoggedOut = new EventEmitter();
 
@@ -29,10 +30,11 @@ export class UserHeaderComponent implements OnInit {
   ngOnInit(){
     this.studentService.getStudents().subscribe((students) => {
       this.students = students;
+      this.student = this.getStudentId();
     });
   }
 
   getStudentId(): Student | undefined {
-    return this.students.find(student => student.id === 1);
+    return this.students.find(student => student.id === 5);
   }
 }
