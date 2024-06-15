@@ -1,0 +1,76 @@
+.homepage-content{
+    padding: var(--step-0);
+    display: grid;
+    gap: var(--step--1);
+    
+    /* More info about repeat() function here -> https://www.sitepoint.com/css-grid-repeat-function/#usingrepeatwithautofitandautofill */
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 30), 1fr));
+
+
+}
+
+.tasks-card{
+    background-color: var(--home-page-card-bg-colour);
+    overflow: hidden;
+}
+
+.tasks-card__header{
+    margin: var(--step--2);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--home-page-card-horizontal-line-colour) 1px solid;
+}
+
+.tasks-card__title{
+    color: var(--home-page-card-title-colour);
+}
+
+.tasks-card__all-assignments-section{
+    text-align: center;
+    padding: var(--step-3);
+}
+
+.tasks-card__all-assignments-number{
+    color: var( --home-page-all-assignments-colour);
+}
+
+.tasks-card__assignments-statistics{
+    background-color: var(--home-page-statistics-section-bg-colour);
+    margin: var(--step-7) var(--step-8) var(--step-7) var(--step-8);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: var(--step-4);
+    padding-left: var(--step-4);
+}
+
+.assignments-statistics__cell{
+    display: flex;
+    padding-top: var(--step-4);
+    padding-right: var(--step-4);
+    flex-direction: column;
+    text-align: center;
+}
+
+.tasks-card__label{
+
+}
+
+.tasks-card__current-assignments-number{
+    color: var(--home-page-all-assignments-colour);
+    font-weight: bold;
+}
+
+.tasks-card__reviewed-assignment-number{
+    color: var(--home-page-reviewed-assignments-colour);
+    font-weight: bold;
+}
+
+.tasks-card__under-review-assignments-number{
+    color: var(--home-page-under-reviewed-assignments-colour);
+    font-weight: bold;
+}
+
+.tasks-card__overdue-assignments-number{
+    color: var(--home-page-overdue-assignments-colour);
+    font-weight: bold;
+}

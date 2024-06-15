@@ -1,0 +1,30 @@
+<section class="homepage-content">
+    <article class="tasks-card">
+        <div class="tasks-card__header">
+            <h1 class="tasks-card__title">TASKS</h1>
+            <a class="tasks-card__more-link" href="/Tasks">More</a>
+        </div>
+        <div class="tasks-card__all-assignments-section">
+            <p class="tasks-card__all-assignments-number">{{allAssignments}}</p>
+            <p class="tasks-card__all-assignments-label">All assignments</p>
+        </div>
+        <div class="tasks-card__assignments-statistics">
+            <div class="assignments-statistics__cell">
+                <p class="tasks-card__current-assignments-number">{{allAssignments}}</p>
+                <p class="tasks-card__label">Current</p>
+            </div>
+            <div class="assignments-statistics__cell">
+                <p class="tasks-card__reviewed-assignment-number">{{reviewedAssignments}}</p>
+                <p class="tasks-card__label">Reviewed</p>
+            </div>
+            <div class="assignments-statistics__cell">
+                <p class="tasks-card__under-review-assignments-number">{{underReviewAssignments}}</p>
+                <p class="tasks-card__label">Under Review</p>
+            </div>
+            <div class="assignments-statistics__cell">
+                <p class="tasks-card__overdue-assignments-number">{{overdueAssignments}}</p>
+                <p class="tasks-card__label">Overdue</p>
+            </div>
+        </div>
+    </article>
+</section>

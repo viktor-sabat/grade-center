@@ -50,6 +50,18 @@
     --login-window-input-field-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     
     /*=============================*/
+    /* Home page                  */
+    /*=============================*/
+    --home-page-card-bg-colour:  #ffffff;
+    --home-page-card-horizontal-line-colour: #5B5F62;
+    --home-page-statistics-section-bg-colour: #eef1f4;
+    --home-page-all-assignments-colour: #6a2797;
+    --home-page-reviewed-assignments-colour: #7ecdce;
+    --home-page-under-reviewed-assignments-colour: #fecb5c;
+    --home-page-overdue-assignments-colour:#fa5873;
+
+
+    /*=============================*/
     /* User header                 */
     /*=============================*/
     
