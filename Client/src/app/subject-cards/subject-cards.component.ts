@@ -17,6 +17,9 @@ export class subjectCardsComponent {
   @Input()
   subjectTitle: string = 'Subject Title...';
 
+  @Input()
+  bgImageUrl: string = '../../assets/Images/assignment-attached-doc.png';
+
   tooltipContent(): string {
     const content = `Title: ${this.subjectTitle}`
     return content;
