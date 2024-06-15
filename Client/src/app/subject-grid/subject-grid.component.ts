@@ -18,14 +18,6 @@ export class subjectGridComponent implements OnInit {
   // Injecting the student service
   constructor(private studentService: StudentService) {}
 
-
-  // ngOnInit() {
-  //   this.studentService.getAssignments().subscribe((assignments) => {
-  //     this.assignments = assignments;
-  //     this.emitAssignmentCounts();
-  //   });
-  // }
-
   ngOnInit() {
     this.studentService.getSubjects().subscribe((subjects) => {
       this.subjects = subjects;

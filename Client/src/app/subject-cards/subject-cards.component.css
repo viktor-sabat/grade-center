@@ -27,7 +27,7 @@
 }
 
 .subject-card__content{
-    aspect-ratio: 4 / 4;
+    aspect-ratio: 4 / 3.5;
     display: flex;
     justify-content: space-around;
     background-color: var(--card-content-bg-colour);
