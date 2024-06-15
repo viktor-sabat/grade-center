@@ -16,6 +16,7 @@ import { HttpClient } from '@angular/common/http';
 export class UserHeaderComponent implements OnInit {
   students: Student[] = [];
   student: Student | undefined;
+  emailFromStorage: string | null = '';
   
   @Output()
   isSuccessfullyLoggedOut = new EventEmitter();
@@ -30,11 +31,12 @@ export class UserHeaderComponent implements OnInit {
   ngOnInit(){
     this.studentService.getStudents().subscribe((students) => {
       this.students = students;
-      this.student = this.getStudentId();
+      this.student = this.getStudentEmail();
     });
   }
 
-  getStudentId(): Student | undefined {
-    return this.students.find(student => student.id === 5);
+  getStudentEmail(): Student | undefined {
+    this.emailFromStorage = localStorage.getItem('userEmail');
+    return this.students.find(student => student.email === this.emailFromStorage);
   }
 }

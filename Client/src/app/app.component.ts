@@ -49,7 +49,6 @@ export class AppComponent {
   handleLogin() {
     this.isLoggedIn = true;
     localStorage.setItem('isLoggedIn', 'true');
-    localStorage.setItem('userEmail', 'tester.wesley@gmail.com');
   }
 
   // Handles the successful logout event
@@ -57,6 +56,7 @@ export class AppComponent {
   handleLogout() {
     this.isLoggedIn = false;
     localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userRole');
     localStorage.removeItem('userEmail');
   }
 }

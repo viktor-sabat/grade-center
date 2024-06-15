@@ -18,6 +18,7 @@
         <article class="login-page__greeting-container">
             <p class="login-page__greeting">{{userGreeting}}</p>
             <p class="login-page__call-to-action">{{userCallToAction}}</p>
+            <p class="login-page__error">{{userError}}</p>
         </article>
         <article class="login-window__form">
             <form #form="ngForm" class="login-form" (ngSubmit)="onLogin(form)">
