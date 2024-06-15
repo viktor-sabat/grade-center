@@ -25,6 +25,11 @@
     color: var(--home-page-card-title-colour);
 }
 
+.tasks-card__more-link{
+    color: var(--home-page-all-assignments-colour);
+    text-decoration: none;
+}
+
 .tasks-card__all-assignments-section{
     text-align: center;
     padding: var(--step-3);
@@ -49,10 +54,6 @@
     padding-right: var(--step-4);
     flex-direction: column;
     text-align: center;
-}
-
-.tasks-card__label{
-
 }
 
 .tasks-card__current-assignments-number{
