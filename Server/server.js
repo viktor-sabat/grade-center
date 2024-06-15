@@ -273,6 +273,49 @@ const assignments = [
       grade: null
     }
 ];
+  
+const subjects = [
+  {
+    id: 1,
+    title: "Math",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 2,
+    title: "Science",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 3,
+    title: "History",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 4,
+    title: "English",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 5,
+    title: "Art",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 6,
+    title: "Computer Science",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 7,
+    title: "Physical Education",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 8,
+    title: "Music",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  }
+];
 
 const students = [
     {
@@ -356,6 +399,10 @@ app.get('/student', cors(),(req, res) => {
 app.get('/student/assignments', cors(),(req, res) => {
     res.json(assignments);
   });
+
+app.get('/subjects', cors(),(req, res) => {
+  res.json(subjects);
+});
 
 app.listen(port, () => {
     console.log(`Node-Express server listening on port ${port}`);
