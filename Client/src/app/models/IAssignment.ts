@@ -8,4 +8,5 @@ export interface Assignment {
   reviewed: boolean;
   expired: boolean;
   grade: string | null; // Assuming grade can be null or a number from 1 to 12
+  backgroundBannerUrl: string;
 }

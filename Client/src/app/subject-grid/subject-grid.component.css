@@ -1,0 +1,7 @@
+.subjects-grid{
+    padding: var(--step-0);
+    background-color: var(--page-content-bg-colour);
+    display: grid;
+    gap: var(--step--1);
+    grid-template-columns: repeat(auto-fill, minmax(calc(var(--step-0) * 11), 1fr));
+}

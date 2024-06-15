@@ -1,0 +1,11 @@
+<article class = "subject-card">
+    <div class="subject-card__header">
+        <p class="subject-card__title">{{subjectTitle | truncate: 16}}</p>
+        <img class="subject-card__icon" [matTooltip]='tooltipContent()' matTooltipPosition=above src="../../assets/Icons/info_icon.svg" alt="Information icon">
+    </div>
+    <div class="subject-card__content">
+        <div class="subject-card__image-wrapper">
+             <img class="subject-card__background-image" [src]="bgImageUrl" alt="Background image">
+        </div>
+    </div>
+</article>

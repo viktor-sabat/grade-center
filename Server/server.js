@@ -28,7 +28,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "12"
+      grade: "12",
+      backgroundBannerUrl: "https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/_files/images/maths-ftr.jpg"
     },
     {
       id: 2,
@@ -39,7 +40,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "10"
+      grade: "10",
+      backgroundBannerUrl: "https://study.com/cimages/course-image/pennsylvania-grades-4-8-science-subject-concentration-practice-study-guide_338165_large.jpeg"
     },
     {
       id: 3,
@@ -50,7 +52,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: true,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5725858/world_map2.jpg"
     },
     {
       id: 4,
@@ -61,7 +64,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "8"
+      grade: "8",
+      backgroundBannerUrl: "https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483338.jpg"
     },
     {
       id: 5,
@@ -72,7 +76,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "9"
+      grade: "9",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/water-palette-near-painting_23-2147863714.jpg?t=st=1718472062~exp=1718475662~hmac=8be9033eaa33bd5d160fd00dd9a9fb00b864ba7667e62dfa794417ec8f71cdf3&w=2000"
     },
     {
       id: 6,
@@ -83,7 +88,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: true,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/futurism-perspective-digital-nomads-lifestyle_23-2151252443.jpg?t=st=1718472254~exp=1718475854~hmac=6eb31f4e4c0e90c3517f0de83b898e6b813bdf8c1ce77f84d94e0b8aad2d7365&w=2000"
     },
     {
       id: 7,
@@ -94,7 +100,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "11"
+      grade: "11",
+      backgroundBannerUrl: "https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/_files/images/maths-ftr.jpg"
     },
     {
       id: 8,
@@ -105,7 +112,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "7"
+      grade: "7",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?t=st=1718472378~exp=1718475978~hmac=025112d9cfebf71097a42c3b8e37dce6a4790e29d27868932dd1671eb131173a&w=2000"
     },
     {
       id: 9,
@@ -116,7 +124,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "6"
+      grade: "6",
+      backgroundBannerUrl: "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg"
     },
     {
       id: 10,
@@ -127,7 +136,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: false,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/_files/images/maths-ftr.jpg"
     },
     {
       id: 11,
@@ -138,7 +148,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "9"
+      grade: "9",
+      backgroundBannerUrl: "https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483338.jpg"
     },
     {
       id: 12,
@@ -149,7 +160,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "8"
+      grade: "8",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/water-palette-near-painting_23-2147863714.jpg?t=st=1718472062~exp=1718475662~hmac=8be9033eaa33bd5d160fd00dd9a9fb00b864ba7667e62dfa794417ec8f71cdf3&w=2000"
     },
     {
       id: 13,
@@ -160,7 +172,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: true,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/futurism-perspective-digital-nomads-lifestyle_23-2151252443.jpg?t=st=1718472254~exp=1718475854~hmac=6eb31f4e4c0e90c3517f0de83b898e6b813bdf8c1ce77f84d94e0b8aad2d7365&w=2000"
     },
     {
       id: 14,
@@ -171,7 +184,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "7"
+      grade: "7",
+      backgroundBannerUrl: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5725858/world_map2.jpg"
     },
     {
       id: 15,
@@ -182,7 +196,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "6"
+      grade: "6",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?t=st=1718472378~exp=1718475978~hmac=025112d9cfebf71097a42c3b8e37dce6a4790e29d27868932dd1671eb131173a&w=2000"
     },
     {
       id: 16,
@@ -193,7 +208,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: false,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483338.jpg"
     },
     {
       id: 17,
@@ -204,7 +220,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: false,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/water-palette-near-painting_23-2147863714.jpg?t=st=1718472062~exp=1718475662~hmac=8be9033eaa33bd5d160fd00dd9a9fb00b864ba7667e62dfa794417ec8f71cdf3&w=2000"
     },
     {
       id: 18,
@@ -215,7 +232,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "10"
+      grade: "10",
+      backgroundBannerUrl: "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg"
     },
     {
       id: 19,
@@ -226,7 +244,8 @@ const assignments = [
       uploaded: true,
       reviewed: false,
       expired: false,
-      grade: "11"
+      grade: "11",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/futurism-perspective-digital-nomads-lifestyle_23-2151252443.jpg?t=st=1718472254~exp=1718475854~hmac=6eb31f4e4c0e90c3517f0de83b898e6b813bdf8c1ce77f84d94e0b8aad2d7365&w=2000"
     },
     {
       id: 20,
@@ -237,7 +256,8 @@ const assignments = [
       uploaded: true,
       reviewed: true,
       expired: false,
-      grade: "9"
+      grade: "9",
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?t=st=1718472378~exp=1718475978~hmac=025112d9cfebf71097a42c3b8e37dce6a4790e29d27868932dd1671eb131173a&w=2000"
     },
     {
       id: 21,
@@ -248,7 +268,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: false,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg"
     },
     {
       id: 22,
@@ -259,7 +280,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: false,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://img.freepik.com/free-photo/futurism-perspective-digital-nomads-lifestyle_23-2151252443.jpg?t=st=1718472254~exp=1718475854~hmac=6eb31f4e4c0e90c3517f0de83b898e6b813bdf8c1ce77f84d94e0b8aad2d7365&w=2000"
     },
     {
       id: 23,
@@ -270,7 +292,8 @@ const assignments = [
       uploaded: false,
       reviewed: false,
       expired: true,
-      grade: null
+      grade: null,
+      backgroundBannerUrl: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5725858/world_map2.jpg"
     }
 ];
   
@@ -278,42 +301,42 @@ const subjects = [
   {
     id: 1,
     title: "Math",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://www.unomaha.edu/college-of-arts-and-sciences/mathematics/_files/images/maths-ftr.jpg"
   },
   {
     id: 2,
     title: "Science",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://study.com/cimages/course-image/pennsylvania-grades-4-8-science-subject-concentration-practice-study-guide_338165_large.jpeg"
   },
   {
     id: 3,
     title: "History",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5725858/world_map2.jpg"
   },
   {
     id: 4,
     title: "English",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://img.freepik.com/free-vector/hand-drawn-english-book-background_23-2149483338.jpg"
   },
   {
     id: 5,
     title: "Art",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://img.freepik.com/free-photo/water-palette-near-painting_23-2147863714.jpg?t=st=1718472062~exp=1718475662~hmac=8be9033eaa33bd5d160fd00dd9a9fb00b864ba7667e62dfa794417ec8f71cdf3&w=2000"
   },
   {
     id: 6,
     title: "Computer Science",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://img.freepik.com/free-photo/futurism-perspective-digital-nomads-lifestyle_23-2151252443.jpg?t=st=1718472254~exp=1718475854~hmac=6eb31f4e4c0e90c3517f0de83b898e6b813bdf8c1ce77f84d94e0b8aad2d7365&w=2000"
   },
   {
     id: 7,
     title: "Physical Education",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?t=st=1718472378~exp=1718475978~hmac=025112d9cfebf71097a42c3b8e37dce6a4790e29d27868932dd1671eb131173a&w=2000"
   },
   {
     id: 8,
     title: "Music",
-    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+    bgImageUrl: "https://images.pexels.com/photos/248510/pexels-photo-248510.jpeg"
   }
 ];
 

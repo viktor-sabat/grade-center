@@ -10,7 +10,9 @@
         <img class="assignment-card__icon" [matTooltip]='tooltipContent()' matTooltipPosition=above src="../../assets/Icons/info_icon.svg" alt="Information icon">
     </div>
     <div class="assignment-card__content">
-        <img class="assignment-card__background-image" src="../../assets/Images/assignment-attached-doc.png" alt="Background image">
+        <div class="assignment-card__image-wrapper">
+            <img class="assignment-card__background-image" [src]="backgroundBannerUrl" alt="Background image">
+        </div>
         <div [class]="{
             'assignment-card__grade': true,
             'assignment-card__grade--hidden': isAssignmentUploaded && !isAssignmentReviewed || !isAssignmentUploaded && !isAssignmentExpired,
@@ -29,5 +31,3 @@
         </div>
     </div>
 </article>
-
-
