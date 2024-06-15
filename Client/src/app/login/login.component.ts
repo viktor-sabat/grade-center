@@ -15,6 +15,21 @@ export class LoginComponent {
     password: ''
   }
 
+  studentLogin: UserInfo = {
+    username: 'tester.wesley@gmail.com',
+    password: 'student'
+  }
+
+  teacherLogin: UserInfo = {
+    username: 'kenny.lacroix@ucll.be',
+    password: 'teacher'
+  }
+
+  studentTeacherLogin: UserInfo = {
+    username: 'viktor.sabat@gmail.com',
+    password: 'studentTeacher'
+  }
+
   userGreeting: string = "Hey there!";
   userCallToAction: string = "Please fill out the form below to get started";
 
