@@ -12,6 +12,8 @@ import { SideMenuStateService } from '../side-menu-state.service';
 })
 
 export class SideMenuExpandedComponent {
+  userRole: string | null = localStorage.getItem('userRole');
+
   constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {
