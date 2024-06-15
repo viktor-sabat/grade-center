@@ -277,22 +277,42 @@ const assignments = [
 const subjects = [
   {
     id: 1,
-    title: "Maths",
+    title: "Math",
     bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
   },
   {
     id: 2,
-    title: "Sciences",
+    title: "Science",
     bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
   },
   {
     id: 3,
-    title: "Why computer?",
+    title: "History",
     bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
   },
   {
     id: 4,
-    title: "How computer?",
+    title: "English",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 5,
+    title: "Art",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 6,
+    title: "Computer Science",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 7,
+    title: "Physical Education",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 8,
+    title: "Music",
     bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
   }
 ];
