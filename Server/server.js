@@ -301,6 +301,10 @@ app.get('/student/assignments', cors(),(req, res) => {
     res.json(assignments);
   });
 
+app.get('/student/subjects', cors(),(req, res) => {
+  res.json(subjects);
+});
+
 app.listen(port, () => {
     console.log(`Node-Express server listening on port ${port}`);
 });
