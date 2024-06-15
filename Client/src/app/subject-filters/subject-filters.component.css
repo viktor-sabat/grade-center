@@ -1,0 +1,7 @@
+.subject-filters{
+    margin-right: var(--step-0);
+    margin-left: var(--step-0);
+    display: flex;
+    flex-wrap: wrap;
+    gap:var(--step--5);
+}
