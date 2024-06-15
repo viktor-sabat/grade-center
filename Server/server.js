@@ -415,8 +415,37 @@ const students = [
     }
 ];
 
+const teachers = [
+    {
+      id: 1,
+      name: "Lacroix",
+      firstName: "Kenny",
+      phoneNumber: "0494 926 301",
+      email: "kenny.lacroix@ucll.be",
+      dateOfBirth: "06.06.1998",
+      academicYear: "2023-2024",
+      address: "Hertogstraat 170",
+      region: "Vlaams-brabant"
+    },
+    {
+      id: 2,
+      name: "Sabat",
+      firstName: "Viktor",
+      phoneNumber: "0494 648 231",
+      email: "viktor.sabat@gmail.com",
+      dateOfBirth: "25.06.2002",
+      academicYear: "2023-2024",
+      address: "Jonkvrouwmattestraat 14",
+      region: "Vlaams-Brabant"
+    }
+];
+
 app.get('/student', cors(),(req, res) => {
   res.json(students)
+});
+
+app.get('/teacher', cors(),(req, res) => {
+  res.json(teachers)
 });
 
 app.get('/student/assignments', cors(),(req, res) => {
