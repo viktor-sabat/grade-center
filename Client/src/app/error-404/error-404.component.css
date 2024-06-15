@@ -1,0 +1,9 @@
+.error__title{
+    margin-top: var(--step-9);
+    text-align: center;
+    font-size: var(--step-6);
+}
+.error__description{
+    text-align: center;
+    font-size: var(--step-3);
+}

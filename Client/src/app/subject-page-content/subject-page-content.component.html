@@ -1,10 +1,13 @@
-<p class="subject-page__title">SUBJECTS</p>
-<div class="subject-page__filter-bar">
-  <tlr-subject-filters></tlr-subject-filters>
-  <p class="subjects-page__label subjects-page__total-subjects-label">
-    All Subjects: {{ subjectsTotal }}
-  </p>
-</div>
-<tlr-subjects-grid
-  (subjectsLength)="updateSubjectsTotal($event)">
-</tlr-subjects-grid>
+@if(userRole === 'teacher' || userRole === 'studentTeacher'){
+  <p class="subject-page__title">SUBJECTS</p>
+  <div class="subject-page__filter-bar">
+    <tlr-subject-filters></tlr-subject-filters>
+    <p class="subjects-page__label subjects-page__total-subjects-label">
+      All Subjects: {{ subjectsTotal }}
+    </p>
+  </div>
+  <tlr-subjects-grid (subjectsLength)="updateSubjectsTotal($event)">
+  </tlr-subjects-grid>
+} @else {
+  <tlr-error-404></tlr-error-404>
+}

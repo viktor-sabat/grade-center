@@ -48,7 +48,7 @@
 .header__logout-button {
     margin-right: var(--step-8);
     margin-left: var(--step-2);
-    width: var(--step-1);
+    width: clamp(1.25rem, 1.167rem + 0.4425vw, 1.875rem);
     border: none;
     background-color: var(--user-header-bg-colour);
     aspect-ratio: 1 / 1;

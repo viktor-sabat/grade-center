@@ -56,5 +56,7 @@ export class AppComponent {
   handleLogout() {
     this.isLoggedIn = false;
     localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userRole');
+    localStorage.removeItem('userEmail');
   }
 }

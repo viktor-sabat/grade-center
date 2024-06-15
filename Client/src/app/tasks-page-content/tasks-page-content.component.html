@@ -1,10 +1,14 @@
-<p class="tasks-page__title">TASKS</p>
-<div class="tasks-page__filter-bar">
-  <tlr-task-filters></tlr-task-filters>
-  <p class="tasks-page__label tasks-page__total-assignments-label">All Assignments: {{assignmentsTotal}}</p>
-</div>
-<p class="tasks-page__label tasks-page__reviewed-assignments-label">Reviewed: {{assignmentsReviewed}}</p>
-<tlr-assignments-grid
-  (assignmentsLength)="updateAssignmentsTotal($event)"
-  (reviewedAssignmentsLength)="updateAssignmentsReviewed($event)">
-</tlr-assignments-grid>
+@if(userRole === 'student' || userRole === 'studentTeacher'){
+  <p class="tasks-page__title">TASKS</p>
+  <div class="tasks-page__filter-bar">
+    <tlr-task-filters></tlr-task-filters>
+    <p class="tasks-page__label tasks-page__total-assignments-label">All Assignments: {{assignmentsTotal}}</p>
+  </div>
+  <p class="tasks-page__label tasks-page__reviewed-assignments-label">Reviewed: {{assignmentsReviewed}}</p>
+  <tlr-assignments-grid (assignmentsLength)="updateAssignmentsTotal($event)"
+    (reviewedAssignmentsLength)="updateAssignmentsReviewed($event)">
+  </tlr-assignments-grid>
+} @else {
+  <tlr-error-404></tlr-error-404>
+}
+
