@@ -3,6 +3,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { Student } from '../models/IStudent';
 import { StudentService } from '../api-service/api.service';
 import { HttpClient } from '@angular/common/http';
+import { Teacher } from '../models/ITeacher';
 
 @Component({
   selector: 'tlr-user-header',
@@ -15,7 +16,9 @@ import { HttpClient } from '@angular/common/http';
 
 export class UserHeaderComponent implements OnInit {
   students: Student[] = [];
+  teachers: Teacher[] = [];
   student: Student | undefined;
+  teacher: Teacher | undefined;
   emailFromStorage: string | null = '';
   
   @Output()
@@ -33,10 +36,20 @@ export class UserHeaderComponent implements OnInit {
       this.students = students;
       this.student = this.getStudentEmail();
     });
+
+    this.studentService.getTeachers().subscribe((teachers) => {
+      this.teachers = teachers;
+      this.teacher = this.getTeacherEmail();
+    });
   }
 
   getStudentEmail(): Student | undefined {
     this.emailFromStorage = localStorage.getItem('userEmail');
     return this.students.find(student => student.email === this.emailFromStorage);
+  }
+
+  getTeacherEmail(): Teacher | undefined {
+    this.emailFromStorage = localStorage.getItem('userEmail');
+    return this.teachers.find(teacher => teacher.email === this.emailFromStorage);
   }
 }
