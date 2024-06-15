@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     font: var(--main-font);
-    border-radius: var(--step--3);
+    border-radius: var(--step--5);
 }
 
 /*! This CSS class is not only used to style the assignment card background but also the background of the grade */
@@ -27,6 +27,7 @@
 }
 
 .assignment-card__header{
+    aspect-ratio: 4 / 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +36,7 @@
 }
 
 .assignment-card__title{
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     padding: var(--step--3);
 }
 
@@ -65,7 +66,7 @@
     transform: translate(-50%, -50%);
     color: var(--card-text-colour-for-dark-bg);
     font-weight: bold;
-    font-size: var(--step-5);
+    font-size: var(--step-3);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     width: var(--step-7);
@@ -86,31 +87,31 @@
 }
 
 .assignment-card__deadline{
-    padding-left: var(--step-0);
-    padding-right: var(--step-0);
-    padding-top: var(--step-0);
+    padding-left: var(--step--1);
+    padding-right: var(--step--1);
+    padding-top: var(--step--4);
     padding-bottom: calc(var(--step-0)*0.2);
 }
 
 .assignment-card__deadline-date{
-    padding-left: var(--step-0);
-    padding-right: var(--step-0);
+    padding-left: var(--step--1);
+    padding-right: var(--step--1);
     padding-top: calc(var(--step-0)*0.2); 
-    padding-bottom: var(--step-0);
+    padding-bottom: var(--step--4);
 }
 
 .assignment-card__status-title{
-    padding-left: var(--step-0);
-    padding-right: var(--step-0);
-    padding-top: var(--step-0);
+    padding-left: var(--step--1);
+    padding-right: var(--step--1);
+    padding-top: var(--step--4);
     padding-bottom: calc(var(--step-0)*0.2);
 }
 
 .assignment-card__uploaded-date{
-    padding-left: var(--step-0);
-    padding-right: var(--step-0);
+    padding-left: var(--step--1);
+    padding-right: var(--step--1);
     padding-top: calc(var(--step-0)*0.2); 
-    padding-bottom: var(--step-0);
+    padding-bottom: var(--step--4);
 }
 
 .assignment-card__uploaded-date--hidden{

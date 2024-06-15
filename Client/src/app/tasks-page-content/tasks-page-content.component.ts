@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { AssignmentsGridComponent } from '../assignments-grid/assignments-grid.component';
 import { TaskFiltersComponent } from '../task-filters/task-filters.component';
 
@@ -10,6 +10,14 @@ import { TaskFiltersComponent } from '../task-filters/task-filters.component';
   styleUrl: './tasks-page-content.component.css'
 })
 export class TasksPageContentComponent {
-  assignmentsTotal: number = 69
-  assignmentsReviewed: number = 42
+  assignmentsTotal: number = 0;
+  assignmentsReviewed: number = 0;
+
+  updateAssignmentsTotal(count: number) {
+    this.assignmentsTotal = count;
+  }
+
+  updateAssignmentsReviewed(count: number) {
+    this.assignmentsReviewed = count;
+  }
 }

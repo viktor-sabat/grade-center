@@ -1,9 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
+import { TruncatePipe } from '../pipes/truncate.pipe';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
   selector: 'tlr-assignment-card',
   standalone: true,
-  imports: [],
+  imports: [TruncatePipe, MatTooltip],
   templateUrl: './assignment-card.component.html',
   styleUrl: './assignment-card.component.css'
 })
@@ -44,4 +46,32 @@ export class AssignmentCardComponent {
   // Represents the assignment grade
   @Input()
   assignmentGrade: string = "12";
+
+  /*
+   * This method will be triggered every time any of its parent properties is changed 
+   */
+  ngOnChanges(changes: SimpleChanges) {
+
+    // If the variable that represents the 'expired status' of the card is changed
+    if (changes['isAssignmentExpired']) {
+
+      // It is logical to check if its status if 'true' now, meaning that the card is expired
+      if(this.isAssignmentExpired){
+        
+        // If card is expired we need to change its 'uploaded' label
+        this.assignmentStatusTitle = "Expired"
+      }
+    }
+  }
+
+  tooltipContent(): string {
+    const content = 
+      `Title: ${this.assignmentTitle}
+      ========================
+      Deadline: ${this.deadlineDate} `
+    ;
+    return content;
+  }
+  
+  
 }
