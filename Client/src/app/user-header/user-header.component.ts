@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, Input } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { Student } from '../models/IStudent';
 import { StudentService } from '../api-service/api.service';
@@ -20,6 +20,7 @@ export class UserHeaderComponent implements OnInit {
   student: Student | undefined;
   teacher: Teacher | undefined;
   emailFromStorage: string | null = '';
+
   
   @Output()
   isSuccessfullyLoggedOut = new EventEmitter();

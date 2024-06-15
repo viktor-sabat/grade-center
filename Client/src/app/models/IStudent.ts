@@ -9,4 +9,5 @@ export interface Student {
   address: string;
   region: string;
   group: number;
+  picture: string;
 }

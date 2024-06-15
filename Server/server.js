@@ -351,7 +351,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Teststraat 70",
       region: "Vlaams-brabant",
-      group: 1
+      group: 1,
+      picture: 'profile-photo.png'
     },
     {
       id: 2,
@@ -363,7 +364,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Computerlaan 21",
       region: "Vlaams-brabant",
-      group: 2
+      group: 2,
+      picture: 'profile-photo.png'
     },
     {
       id: 3,
@@ -375,7 +377,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Appelboomstraat 34",
       region: "Oost-Vlaanderen",
-      group: 1
+      group: 1,
+      picture: 'profile-photo.png'
     },
     {
       id: 4,
@@ -387,7 +390,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Ooievaarstraat 52",
       region: "Oost-Vlaanderen",
-      group: 3
+      group: 3,
+      picture: 'profile-photo.png'
     },
     {
       id: 5,
@@ -399,7 +403,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Jonkvrouwmattestraat 14",
       region: "Vlaams-Brabant",
-      group: 2
+      group: 2,
+      picture: 'profile-photo-2.png'
     },
     {
       id: 6,
@@ -411,7 +416,8 @@ const students = [
       academicYear: "2023-2024",
       address: "Beeldhouwersstraat 9",
       region: "Oost-Vlaanderen",
-      group: 3
+      group: 3,
+      picture: 'profile-photo.png'
     }
 ];
 
@@ -425,7 +431,8 @@ const teachers = [
       dateOfBirth: "06.06.1998",
       academicYear: "2023-2024",
       address: "Hertogstraat 170",
-      region: "Vlaams-brabant"
+      region: "Vlaams-brabant",
+      picture: 'profile-photo-3.png'
     },
     {
       id: 2,
@@ -436,7 +443,8 @@ const teachers = [
       dateOfBirth: "25.06.2002",
       academicYear: "2023-2024",
       address: "Jonkvrouwmattestraat 14",
-      region: "Vlaams-Brabant"
+      region: "Vlaams-Brabant",
+      picture: 'profile-photo-2.png'
     }
 ];
 

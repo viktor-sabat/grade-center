@@ -8,4 +8,5 @@ export interface Teacher {
   academicYear: string;
   address: string;
   region: string;
+  picture: string;
 }

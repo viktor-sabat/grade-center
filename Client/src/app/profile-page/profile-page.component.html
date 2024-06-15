@@ -1,7 +1,11 @@
 <h1 class="profile__title">PROFILE</h1>
 <main class="profile">
     <section class="profile__section profile__section--content-centered">
-        <img class="profile__image" src="../../assets/Images/profile-photo-2.png" alt="">
+        @if(emailFromStorage === student?.email){
+            <img class="profile__image" src="../../assets/Images/{{student?.picture}}" alt="Profile picture">
+        } @else {
+            <img class="profile__image" src="../../assets/Images/{{teacher?.picture}}" alt="Profile picture">
+        }
     </section>
     <section class="profile__section">
         @if(emailFromStorage === student?.email){

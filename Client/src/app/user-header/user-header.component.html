@@ -1,6 +1,12 @@
 <header class="header">
     <section class="header__section">
-        <div class="header__div"><img class="header__image" src="../../assets/Images/profile-photo-2.png" alt="Profile picture"></div>
+        <div class="header__div">
+            @if(emailFromStorage === student?.email){
+                <img class="header__image" src="../../assets/Images/{{student?.picture}}" alt="Profile picture">
+            } @else {
+                <img class="header__image" src="../../assets/Images/{{teacher?.picture}}" alt="Profile picture">
+            }
+        </div>
         <p class="header__paragraph">
             @if(emailFromStorage === student?.email){
                 {{student?.firstName}} {{student?.name}}
