@@ -47,6 +47,12 @@ export class AssignmentCardComponent {
   @Input()
   assignmentGrade: string = "12";
 
+  @Input()
+  backgroundBannerUrl: string = '../../assets/Images/assignment-attached-doc.png';
+
+  @Input()
+  assignmentDescription: string = '';
+
   /*
    * This method will be triggered every time any of its parent properties is changed 
    */
@@ -68,7 +74,7 @@ export class AssignmentCardComponent {
     const content = 
       `Title: ${this.assignmentTitle}
       ========================
-      Deadline: ${this.deadlineDate} `
+      ${this.assignmentDescription} `
     ;
     return content;
   }
