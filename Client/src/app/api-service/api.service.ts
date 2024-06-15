@@ -10,13 +10,14 @@ import {Student} from '../models/IStudent'
 export class StudentService {
   constructor(private http: HttpClient) { }
 
-  private apiUrl = 'http://localhost:2024/student/assignments';
+  private apiUrlStudent = 'http://localhost:2024/student';
+  private apiUrlAssignment = 'http://localhost:2024/student/assignments';
 
   getAssignments(): Observable<Assignment[]> {
-    return this.http.get<Assignment[]>(this.apiUrl);
+    return this.http.get<Assignment[]>(this.apiUrlAssignment);
   }
 
   getStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>(this.apiUrl);
+    return this.http.get<Student[]>(this.apiUrlStudent);
   }
 }

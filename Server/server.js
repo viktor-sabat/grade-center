@@ -277,7 +277,7 @@ const assignments = [
 const students = [
     {
       id: 1,
-      Name: "Wesley",
+      name: "Wesley",
       firstName: "Tester",
       phoneNumber: "0494 123 456",
       email: "tester.wesley@gmail.com",
@@ -289,7 +289,7 @@ const students = [
     },
     {
       id: 2,
-      Name: "Demol",
+      name: "Demol",
       firstName: "Quincy",
       phoneNumber: "0494 654 321",
       email: "quincy.demol@gmail.com",
@@ -301,7 +301,7 @@ const students = [
     },
     {
       id: 3,
-      Name: "Leribaux",
+      name: "Leribaux",
       firstName: "Mathias",
       phoneNumber: "0494 367 620",
       email: "mathias.leribaux@gmail.com",
@@ -313,7 +313,7 @@ const students = [
     },
     {
       id: 4,
-      Name: "Solia",
+      name: "Solia",
       firstName: "Akasha",
       phoneNumber: "0494 664 634",
       email: "akasha.solia@gmail.com",
@@ -325,7 +325,7 @@ const students = [
     },
     {
       id: 5,
-      Name: "Sabat",
+      name: "Sabat",
       firstName: "Viktor",
       phoneNumber: "0494 648 231",
       email: "viktor.sabat@gmail.com",
@@ -337,7 +337,7 @@ const students = [
     },
     {
       id: 6,
-      Name: "Johnson",
+      name: "Johnson",
       firstName: "Alvin",
       phoneNumber: "0494 987 520",
       email: "alvin.johnson@gmail.com",

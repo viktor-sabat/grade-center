@@ -59,7 +59,7 @@ export class AssignmentsGridComponent implements OnInit{
 
   // Injecting the student service
   constructor(private studentService: StudentService){
-   }
+  }
 
 
   ngOnInit() {

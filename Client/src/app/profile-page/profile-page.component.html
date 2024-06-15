@@ -4,15 +4,15 @@
         <img class="profile__image" src="../../assets/Images/profile-photo-2.png" alt="">
     </section>
     <section class="profile__section">
-        <p class="profile__input">Name</p>
-        <p class="profile__input">Firstname</p>
-        <p class="profile__input">Phone number</p>
-        <p class="profile__input">E-Mail</p>
+        <p class="profile__input">{{getStudentId()?.name}}</p>
+        <p class="profile__input">{{getStudentId()?.firstName}}</p>
+        <p class="profile__input">{{getStudentId()?.phoneNumber}}</p>
+        <p class="profile__input">{{getStudentId()?.email}}</p>
     </section>
     <section class="profile__section">
-        <p class="profile__input">Date of birth</p>
-        <p class="profile__input">Academic year</p>
-        <p class="profile__input">Address</p>
-        <p class="profile__input">Region</p>
+        <p class="profile__input">{{getStudentId()?.dateOfBirth}}</p>
+        <p class="profile__input">{{getStudentId()?.academicYear}}</p>
+        <p class="profile__input">{{getStudentId()?.address}}</p>
+        <p class="profile__input">{{getStudentId()?.region}}</p>
     </section>
 </main>
