@@ -1,7 +1,10 @@
 <p class="tasks-page__title">TASKS</p>
 <div class="tasks-page__filter-bar">
-    <tlr-task-filters></tlr-task-filters>
-    <p class="tasks-page__label tasks-page__total-assignments-label">All Assignments: {{assignmentsTotal}}</p>
+  <tlr-task-filters></tlr-task-filters>
+  <p class="tasks-page__label tasks-page__total-assignments-label">All Assignments: {{assignmentsTotal}}</p>
 </div>
 <p class="tasks-page__label tasks-page__reviewed-assignments-label">Reviewed: {{assignmentsReviewed}}</p>
-<tlr-assignments-grid></tlr-assignments-grid>
+<tlr-assignments-grid
+  (assignmentsLength)="updateAssignmentsTotal($event)"
+  (reviewedAssignmentsLength)="updateAssignmentsReviewed($event)">
+</tlr-assignments-grid>

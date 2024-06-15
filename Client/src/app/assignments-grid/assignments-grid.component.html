@@ -1,5 +1,13 @@
 <section [className]="'assignments-grid'">
-    @for (AssignmentStatus of AssignmentStatusParameters; track AssignmentStatus){
-        <tlr-assignment-card [isAssignmentUploaded]="AssignmentStatus[0]" [isAssignmentReviewed]="AssignmentStatus[1]" [isAssignmentExpired]="AssignmentStatus[2]"></tlr-assignment-card>
+    @for (assignment of assignments; track assignment){
+        <tlr-assignment-card 
+          [assignmentTitle]="assignment.title"
+          [deadlineDate]="assignment.dueDate"
+          [uploadDate]="assignment.uploadDate ? assignment.uploadDate : ''"
+          [assignmentGrade]="assignment.grade || '0'"
+          [isAssignmentUploaded]="assignment.uploaded" 
+          [isAssignmentReviewed]="assignment.reviewed" 
+          [isAssignmentExpired]="assignment.expired"
+        ></tlr-assignment-card>
       }
 </section>
