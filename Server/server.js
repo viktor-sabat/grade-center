@@ -274,6 +274,28 @@ const assignments = [
     }
 ];
   
+const subjects = [
+  {
+    id: 1,
+    title: "Maths",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 2,
+    title: "Sciences",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 3,
+    title: "Why computer?",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  },
+  {
+    id: 4,
+    title: "How computer?",
+    bgImageUrl: "https://cdn.discordapp.com/avatars/467310209312882709/da5e78a63f714e1932fdb42fb30e324e.png"
+  }
+];
 
 app.get('/student/assignments', cors(),(req, res) => {
     res.json(assignments);
