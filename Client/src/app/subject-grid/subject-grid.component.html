@@ -1,0 +1,7 @@
+<section [className]="'subjects-grid'">
+    @for (subject of subjects; track subject){
+        <tlr-subject-card 
+        [subjectTitle]="subject.title"
+        ></tlr-subject-card>
+    }
+</section>
