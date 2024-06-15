@@ -25,6 +25,9 @@
     .app-section__side-menu{
         display: none;
     }
+    .page-content{
+        margin-bottom: var(--step-8);
+    }
     .app-section__mobile-menu {
         width: 100%;
         display: block;

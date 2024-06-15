@@ -10,5 +10,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './mobile-menu.component.css'
 })
 export class MobileMenuComponent {
+  userRole: string | null = localStorage.getItem('userRole');
 
 }

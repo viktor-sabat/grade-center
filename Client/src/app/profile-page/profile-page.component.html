@@ -1,18 +1,36 @@
 <h1 class="profile__title">PROFILE</h1>
 <main class="profile">
     <section class="profile__section profile__section--content-centered">
-        <img class="profile__image" src="../../assets/Images/profile-photo-2.png" alt="">
+        @if(emailFromStorage === student?.email){
+            <img class="profile__image" src="../../assets/Images/{{student?.picture}}" alt="Profile picture">
+        } @else {
+            <img class="profile__image" src="../../assets/Images/{{teacher?.picture}}" alt="Profile picture">
+        }
     </section>
     <section class="profile__section">
-        <p class="profile__input">{{student?.name}}</p>
-        <p class="profile__input">{{student?.firstName}}</p>
-        <p class="profile__input">{{student?.phoneNumber}}</p>
-        <p class="profile__input">{{student?.email}}</p>
+        @if(emailFromStorage === student?.email){
+            <p class="profile__input">{{student?.name}}</p>
+            <p class="profile__input">{{student?.firstName}}</p>
+            <p class="profile__input">{{student?.phoneNumber}}</p>
+            <p class="profile__input">{{student?.email}}</p>
+        } @else {
+            <p class="profile__input">{{teacher?.name}}</p>
+            <p class="profile__input">{{teacher?.firstName}}</p>
+            <p class="profile__input">{{teacher?.phoneNumber}}</p>
+            <p class="profile__input">{{teacher?.email}}</p>
+        }
     </section>
     <section class="profile__section">
-        <p class="profile__input">{{student?.dateOfBirth}}</p>
-        <p class="profile__input">{{student?.academicYear}}</p>
-        <p class="profile__input">{{student?.address}}</p>
-        <p class="profile__input">{{student?.region}}</p>
+        @if(emailFromStorage === student?.email){
+            <p class="profile__input">{{student?.dateOfBirth}}</p>
+            <p class="profile__input">{{student?.academicYear}}</p>
+            <p class="profile__input">{{student?.address}}</p>
+            <p class="profile__input">{{student?.region}}</p>
+        } @else {
+            <p class="profile__input">{{teacher?.dateOfBirth}}</p>
+            <p class="profile__input">{{teacher?.academicYear}}</p>
+            <p class="profile__input">{{teacher?.address}}</p>
+            <p class="profile__input">{{teacher?.region}}</p>
+        }
     </section>
 </main>

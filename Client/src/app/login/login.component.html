@@ -18,12 +18,13 @@
         <article class="login-page__greeting-container">
             <p class="login-page__greeting">{{userGreeting}}</p>
             <p class="login-page__call-to-action">{{userCallToAction}}</p>
+            <p class="login-page__error">{{userError}}</p>
         </article>
         <article class="login-window__form">
             <form #form="ngForm" class="login-form" (ngSubmit)="onLogin(form)">
                 <div class="login-form__credentials-section">
                     <input [(ngModel)]="userInfo.username" name="username" class="login-form__input-field login-form__username" type="text" placeholder="Username">
-                    <input [(ngModel)]="userInfo.password" name="password" class="login-form__input-field login-form__password" type="text" placeholder="Password">
+                    <input [(ngModel)]="userInfo.password" name="password" class="login-form__input-field login-form__password" type="password" placeholder="Password">
                 </div>
                 <div class="login-form__submission-section">
                     <div class="login-form__remember-me-wrapper">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 import { SideMenuStateService } from '../side-menu-state.service';
@@ -11,7 +11,9 @@ import { SideMenuStateService } from '../side-menu-state.service';
   styleUrl: './side-menu.component.css'
 })
 
-export class SideMenuComponent {
+export class SideMenuComponent{
+  userRole: string | null = localStorage.getItem('userRole');
+
   constructor(private sideMenuStateService: SideMenuStateService) {}
 
   onCheckboxClick() {
