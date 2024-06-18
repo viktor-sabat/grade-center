@@ -41,7 +41,8 @@
 
 
 .login-account-type__button-image{
-    width: calc(var(--step-1)*7);
+    width: calc(var(--step-1)*6);
+    padding: var(--step--3);
     aspect-ration: 1 / 1;
 }
 
