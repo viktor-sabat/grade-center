@@ -2,7 +2,7 @@
 
 ## Description
 
-**Grade Center**: A web application developed with Angular to manage and track student grades. It provides functionalities to view grades for various subjects, offering a comprehensive view of academic performance.
+A web application developed with Angular to manage and track student grades. It provides functionalities to view grades for various subjects, offering a comprehensive view of academic performance.
 
 ## Technologies Used
 
