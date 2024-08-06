@@ -16,7 +16,7 @@ A web application developed with Angular to manage and track student grades. It 
 1. **Clone the Repository:**
 
    ```sh
-   git clone https://github.com/your-username/grade-center.git
+   git clone https://github.com/viktor-sabat/grade-center
 
 2. **Navigate to the Project Directory:**
 
