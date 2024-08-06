@@ -1,27 +1,31 @@
-# GradeCenter
+# Grade Center
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+## Description
 
-## Development server
+**Grade Center**: A web application developed with Angular to manage and track student grades. It provides functionalities to view grades for various subjects, offering a comprehensive view of academic performance.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- **Angular**: For building the application with a modular and component-based architecture.
+- **HTML**: For the structure of the web pages.
+- **CSS**: For styling the application.Utilized Fluid CSS for responsive design.
+- **TypeScript**: For writing Angular components and services.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Start the App
 
-## Build
+1. **Clone the Repository:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```sh
+   git clone https://github.com/your-username/grade-center.git
 
-## Running unit tests
+2. **Navigate to the Project Directory:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```sh
+     cd grade-center
 
-## Running end-to-end tests
+3. **Start the App with Terminal**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```sh
+   npm start
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Grade Center Screenshot](https://github.com/user-attachments/assets/8b10bee1-8c35-48ce-8273-8883a107ca2b)
