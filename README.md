@@ -32,3 +32,8 @@ A web application developed with Angular to manage and track student grades. It 
    npm start
 
 ![Grade Center Screenshot](https://github.com/user-attachments/assets/8b10bee1-8c35-48ce-8273-8883a107ca2b)
+
+
+<img src="https://github.com/user-attachments/assets/851d1bde-f97b-4336-b082-ea09dd830dcd" style="height: 80vh; width: auto;" alt="toledoer" />
+
+
